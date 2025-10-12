@@ -1,12 +1,15 @@
+
+// ==================== auth_service.dart ====================
 import '../models/user.dart';
 import 'api_client.dart';
 
 class AuthService {
   final ApiClient _apiClient = ApiClient.instance;
 
+  // FIXED: Changed from /accounts/ to /auth/ to match Django backend
   Future<ApiResponse<Map<String, dynamic>>> sendOtp(String phoneNumber) async {
     return await _apiClient.post<Map<String, dynamic>>(
-      '/accounts/send-otp/',
+      '/auth/send-otp/',
       {'phone_number': phoneNumber},
       requiresAuth: false,
     );
@@ -17,7 +20,7 @@ class AuthService {
     String otp,
   ) async {
     return await _apiClient.post<Map<String, dynamic>>(
-      '/accounts/verify-otp/',
+      '/auth/verify-otp/',
       {
         'phone_number': phoneNumber,
         'otp': otp,
@@ -28,14 +31,14 @@ class AuthService {
 
   Future<ApiResponse<User>> getCurrentUser() async {
     return await _apiClient.get<User>(
-      '/accounts/profile/',
+      '/auth/profile/',
       fromJson: (json) => User.fromJson(json),
     );
   }
 
   Future<ApiResponse<User>> updateProfile(Map<String, dynamic> data) async {
     return await _apiClient.put<User>(
-      '/accounts/profile/',
+      '/auth/profile/',
       data,
       fromJson: (json) => User.fromJson(json),
     );

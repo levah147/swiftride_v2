@@ -1,8 +1,10 @@
+// ==================== auth_screen.dart ====================
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../constants/colors.dart';
 import '../constants/text_styles.dart';
-import 'otp_screen.dart'; // Updated import to use proper OTP screen
+import '../services/auth_service.dart';
+import 'otp_screen.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -13,12 +15,86 @@ class AuthScreen extends StatefulWidget {
 
 class _AuthScreenState extends State<AuthScreen> {
   final TextEditingController _phoneController = TextEditingController();
+  final AuthService _authService = AuthService();
   String _selectedCountryCode = '+234';
+  bool _isLoading = false;
   
   @override
   void dispose() {
     _phoneController.dispose();
     super.dispose();
+  }
+
+  Future<void> _sendOtp() async {
+    // Validate phone number
+    if (_phoneController.text.trim().isEmpty) {
+      _showError('Please enter your phone number');
+      return;
+    }
+
+    // Validate phone number length (Nigerian numbers are 10 digits after country code)
+    if (_phoneController.text.trim().length < 10) {
+      _showError('Please enter a valid phone number');
+      return;
+    }
+
+    // Build full phone number
+    String phoneNumber = _selectedCountryCode + _phoneController.text.trim();
+    
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      // Call backend API to send OTP
+      final response = await _authService.sendOtp(phoneNumber);
+
+      setState(() {
+        _isLoading = false;
+      });
+
+      if (response.isSuccess) {
+        // Show success message
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(response.data?['message'] ?? 'OTP sent successfully'),
+              backgroundColor: Colors.green,
+              duration: const Duration(seconds: 3),
+            ),
+          );
+
+          // Navigate to OTP screen
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => OTPScreen(
+                phoneNumber: phoneNumber,
+              ),
+            ),
+          );
+        }
+      } else {
+        _showError(response.error ?? 'Failed to send OTP');
+      }
+    } catch (e) {
+      setState(() {
+        _isLoading = false;
+      });
+      _showError('Network error. Please check your connection and try again.');
+    }
+  }
+
+  void _showError(String message) {
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(message),
+          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 4),
+        ),
+      );
+    }
   }
 
   @override
@@ -39,7 +115,6 @@ class _AuthScreenState extends State<AuthScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // 3D Character illustration placeholder
                     Container(
                       width: 120,
                       height: 120,
@@ -113,6 +188,14 @@ class _AuthScreenState extends State<AuthScreen> {
                                   ),
                                 ),
                                 const SizedBox(width: 8),
+                                Text(
+                                  _selectedCountryCode,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
                                 const Icon(
                                   Icons.keyboard_arrow_down,
                                   color: Colors.white,
@@ -131,8 +214,12 @@ class _AuthScreenState extends State<AuthScreen> {
                                 fontSize: 16,
                               ),
                               keyboardType: TextInputType.phone,
+                              inputFormatters: [
+                                FilteringTextInputFormatter.digitsOnly,
+                                LengthLimitingTextInputFormatter(11),
+                              ],
                               decoration: InputDecoration(
-                                hintText: '$_selectedCountryCode 8167791934',
+                                hintText: '8167791934',
                                 hintStyle: TextStyle(
                                   color: Colors.grey[400],
                                 ),
@@ -152,15 +239,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     
                     // Sign in button
                     ElevatedButton(
-                      onPressed: () {
-                        String fullPhoneNumber = '$_selectedCountryCode${_phoneController.text}';
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => OTPScreen(phoneNumber: fullPhoneNumber),
-                          ),
-                        );
-                      },
+                      onPressed: _isLoading ? null : _sendOtp,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.primary,
                         foregroundColor: Colors.white,
@@ -168,11 +247,21 @@ class _AuthScreenState extends State<AuthScreen> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
+                        disabledBackgroundColor: AppColors.primary.withOpacity(0.5),
                       ),
-                      child: Text(
-                        'Sign in',
-                        style: AppTextStyles.button,
-                      ),
+                      child: _isLoading
+                          ? const SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                              ),
+                            )
+                          : Text(
+                              'Sign in',
+                              style: AppTextStyles.button,
+                            ),
                     ),
                     
                     const SizedBox(height: 24),
@@ -202,7 +291,9 @@ class _AuthScreenState extends State<AuthScreen> {
                     _buildSocialButton(
                       icon: Icons.g_mobiledata,
                       text: 'Sign in with Google',
-                      onPressed: () {},
+                      onPressed: () {
+                        _showError('Google Sign-In coming soon');
+                      },
                     ),
                     
                     const SizedBox(height: 12),
@@ -211,14 +302,16 @@ class _AuthScreenState extends State<AuthScreen> {
                     _buildSocialButton(
                       icon: Icons.facebook,
                       text: 'Sign in with Facebook',
-                      onPressed: () {},
+                      onPressed: () {
+                        _showError('Facebook Sign-In coming soon');
+                      },
                     ),
                     
                     const Spacer(),
                     
                     // Terms and conditions
                     Text(
-                      'By signing up, you agree to our Terms & Conditions, acknowledge our Privacy Policy, and confirm that you\'re over 18. We may send promotions related to our services – you can unsubscribe anytime in Communication Settings under your profile.',
+                      'By signing up, you agree to our Terms & Conditions, acknowledge our Privacy Policy, and confirm that you\'re over 18. We may send promotions related to our services — you can unsubscribe anytime in Communication Settings under your profile.',
                       style: TextStyle(
                         color: Colors.grey[400],
                         fontSize: 12,
