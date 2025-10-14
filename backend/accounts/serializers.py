@@ -2,10 +2,12 @@ from rest_framework import serializers
 from django.contrib.auth import authenticate
 from .models import User, OTPVerification
 
+
 class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['phone_number', 'first_name', 'last_name']
+
 
 class OTPVerificationSerializer(serializers.Serializer):
     phone_number = serializers.CharField()
@@ -18,15 +20,59 @@ class OTPVerificationSerializer(serializers.Serializer):
             internal_data['otp_code'] = internal_data.pop('otp')
         return internal_data
 
+
 class UserProfileSerializer(serializers.ModelSerializer):
+    profile_picture_url = serializers.SerializerMethodField()
+    
     class Meta:
         model = User
         fields = [
             'id', 'phone_number', 'first_name', 'last_name', 
             'email', 'rating', 'total_rides', 'profile_picture',
-            'is_driver', 'created_at'
+            'profile_picture_url', 'is_driver', 'created_at'
         ]
-        read_only_fields = ['id', 'rating', 'total_rides', 'created_at']
+        read_only_fields = ['id', 'rating', 'total_rides', 'created_at', 'profile_picture_url']
+    
+    def get_profile_picture_url(self, obj):
+        """
+        Return the full URL for the profile picture.
+        If profile picture exists, return its URL; otherwise return None
+        """
+        if obj.profile_picture:
+            request = self.context.get('request')
+            if request is not None:
+                return request.build_absolute_uri(obj.profile_picture.url)
+            return obj.profile_picture.url
+        return None
+
+
+class UserProfileUpdateSerializer(serializers.ModelSerializer):
+    """Serializer for updating user profile with image upload"""
+    
+    class Meta:
+        model = User
+        fields = [
+            'first_name', 'last_name', 'email', 'profile_picture'
+        ]
+    
+    def validate_profile_picture(self, value):
+        """Validate profile picture"""
+        if value:
+            # Check file size (max 5MB)
+            if value.size > 5 * 1024 * 1024:
+                raise serializers.ValidationError('Profile picture file size must not exceed 5MB.')
+            
+            # Check file type
+            valid_extensions = ['.jpg', '.jpeg', '.png', '.gif']
+            import os
+            ext = os.path.splitext(value.name)[1].lower()
+            if ext not in valid_extensions:
+                raise serializers.ValidationError(
+                    f'Invalid file format. Allowed formats: {", ".join(valid_extensions)}'
+                )
+        
+        return value
+
 
 class LoginSerializer(serializers.Serializer):
     phone_number = serializers.CharField()

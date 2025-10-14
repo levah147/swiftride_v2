@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
+import '../../constants/colors.dart';
 import 'ride_completion_screen.dart'; // Import RideCompletionScreen
 
 class RideTrackingScreen extends StatefulWidget {

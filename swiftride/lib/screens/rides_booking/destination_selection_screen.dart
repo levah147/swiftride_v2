@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
+import '../../constants/colors.dart';
 import 'ride_options_screen.dart';
 
 class DestinationSelectionScreen extends StatefulWidget {
   const DestinationSelectionScreen({super.key});
 
-  @override
+  @override 
   State<DestinationSelectionScreen> createState() => _DestinationSelectionScreenState();
 }
 

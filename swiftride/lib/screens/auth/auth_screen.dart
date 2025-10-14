@@ -1,9 +1,9 @@
 // ==================== auth_screen.dart ====================
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../constants/colors.dart';
-import '../constants/text_styles.dart';
-import '../services/auth_service.dart';
+import '../../constants/colors.dart';
+import '../../constants/text_styles.dart';
+import '../../services/auth_service.dart';
 import 'otp_screen.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -355,3 +355,4 @@ class _AuthScreenState extends State<AuthScreen> {
     );
   }
 }
+// TODO Implement this library.

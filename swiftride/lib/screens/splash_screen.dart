@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:swiftride/screens/auth_screen.dart'; // Ensure AuthScreen is imported
+import '../screens/auth/auth_screen.dart'; // Ensure AuthScreen is imported
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

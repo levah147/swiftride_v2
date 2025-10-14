@@ -2,10 +2,10 @@
 // ==================== otp_screen.dart ====================
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../constants/colors.dart';
-import '../constants/text_styles.dart';
-import '../services/auth_service.dart';
-import 'home_screen.dart';
+import 'package:swiftride/screens/main/main_navigation_screen.dart';
+import '../../constants/colors.dart';
+import '../../constants/text_styles.dart';
+import '../../services/auth_service.dart';
 
 class OTPScreen extends StatefulWidget {
   final String phoneNumber;
@@ -129,7 +129,7 @@ class _OTPScreenState extends State<OTPScreen> {
 
           // Navigate to home screen and remove all previous routes
           Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => const HomeScreen()),
+            MaterialPageRoute(builder: (context) => const MainNavigationScreen()),
             (route) => false,
           );
         }

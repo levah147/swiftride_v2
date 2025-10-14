@@ -1,6 +1,18 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.core.validators import RegexValidator
+import os
+from django.utils.text import slugify
+
+
+def user_profile_picture_path(instance, filename):
+    """
+    Generate file path for user profile pictures.
+    Format: profile_pictures/user_{id}/{filename}
+    """
+    ext = os.path.splitext(filename)[1]
+    filename = f"{slugify(instance.phone_number)}{ext}"
+    return os.path.join('profile_pictures', f'user_{instance.id}', filename)
 
 
 class UserManager(BaseUserManager):
@@ -86,7 +98,12 @@ class User(AbstractUser):
     is_phone_verified = models.BooleanField(default=False)
     rating = models.DecimalField(max_digits=3, decimal_places=2, default=5.00)
     total_rides = models.IntegerField(default=0)
-    profile_picture = models.URLField(blank=True, null=True)
+    profile_picture = models.ImageField(
+        upload_to=user_profile_picture_path,
+        blank=True,
+        null=True,
+        help_text="User's profile picture"
+    )
     is_driver = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
