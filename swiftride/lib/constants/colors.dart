@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Primary brand colors
-  static const Color primary = Color(0xFF4285F4); // Google Blue
+  static const Color primary = Color(0xFF2f5f76); // Google Blue
   static const Color primaryDark = Color(0xFF3367D6);
   static const Color primaryLight = Color(0xFF669DF6);
 
@@ -53,7 +53,7 @@ class AppColors {
   static const Color driver = Color(0xFFFF9800); // Orange for driver
 
   // Social login colors
-  static const Color google = Color(0xFF4285F4);
+  static const Color google = Color(0xFF2f5f76);
   static const Color facebook = Color(0xFF1877F2);
   static const Color apple = Color(0xFF000000);
 

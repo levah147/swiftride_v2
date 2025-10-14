@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../screens/auth/auth_screen.dart'; // Ensure AuthScreen is imported
+import 'package:lottie/lottie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import '../screens/auth/auth_screen.dart';
+import '../screens/main/main_navigation_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -9,28 +12,56 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen>
+    with TickerProviderStateMixin {
+  late AnimationController _fadeController;
+  late Animation<double> _fadeAnimation;
+  late AnimationController _lottieController;
+
   @override
   void initState() {
     super.initState();
+
+    // Fade-in animation for logo and text
+    _fadeController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1200),
+    );
+    _fadeAnimation = CurvedAnimation(
+      parent: _fadeController,
+      curve: Curves.easeIn,
+    );
+
+    _lottieController = AnimationController(vsync: this);
+    _fadeController.forward();
     _initializeApp();
   }
 
   Future<void> _initializeApp() async {
-    // Simulate app initialization
-    await Future.delayed(const Duration(seconds: 3));
-    
-    if (mounted) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const AuthScreen()),
-      );
-    }
+    await Future.delayed(const Duration(seconds: 5)); // Simulate loading
+    final prefs = await SharedPreferences.getInstance();
+    final token = prefs.getString('access_token');
+
+    if (!mounted) return;
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) =>
+            token == null ? const AuthScreen() : const MainNavigationScreen(),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _fadeController.dispose();
+    _lottieController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // Set status bar to transparent
+    // Transparent status bar for immersive look
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -38,45 +69,62 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
     );
 
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: const Color(0xFF2f5f76),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // SwiftRide Logo
-            Text(
-              'SwiftRide',
-              style: TextStyle(
-                fontSize: 48,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                letterSpacing: -1.5,
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Subtitle or tagline
-            Text(
-              'Your ride, your way',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white.withOpacity(0.8),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-            const SizedBox(height: 40),
-            // Loading indicator
-            SizedBox(
-              width: 24,
-              height: 24,
-              child: CircularProgressIndicator(
-                strokeWidth: 2,
-                valueColor: AlwaysStoppedAnimation<Color>(
-                  Colors.white.withOpacity(0.7),
+      backgroundColor: isDark
+          ? const Color(0xFF1A1A1A)
+          : const Color(0xFF2f5f76), // consistent brand color
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            return FadeTransition(
+              opacity: _fadeAnimation,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // Car animation
+                    Lottie.asset(
+                      'assets/animations/car_animation.json',
+                      controller: _lottieController,
+                      width: constraints.maxWidth * 0.6,
+                      height: constraints.maxHeight * 0.3,
+                      onLoaded: (composition) {
+                        _lottieController
+                          ..duration = composition.duration
+                          ..forward();
+                      },
+                    ),
+                    SizedBox(height: constraints.maxHeight * 0.05),
+
+                    // App name
+                    Text(
+                      'SwiftRide',
+                      style: theme.textTheme.headlineMedium?.copyWith(
+                        fontSize: 48,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        letterSpacing: -1.5,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+
+                    // Tagline
+                    Text(
+                      'Your ride, your way',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        fontSize: 16,
+                        color: Colors.white.withOpacity(0.85),
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ),
-          ],
+            );
+          },
         ),
       ),
     );

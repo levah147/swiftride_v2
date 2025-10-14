@@ -1,15 +1,12 @@
-
-// ==================== otp_screen.dart ====================
+// ==================== otp_screen.dart (overflow fixed) ====================
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:swiftride/screens/main/main_navigation_screen.dart';
-import '../../constants/colors.dart';
-import '../../constants/text_styles.dart';
 import '../../services/auth_service.dart';
 
 class OTPScreen extends StatefulWidget {
   final String phoneNumber;
-  
+
   const OTPScreen({
     super.key,
     required this.phoneNumber,
@@ -19,358 +16,293 @@ class OTPScreen extends StatefulWidget {
   State<OTPScreen> createState() => _OTPScreenState();
 }
 
-class _OTPScreenState extends State<OTPScreen> {
-  final List<TextEditingController> _controllers = List.generate(6, (index) => TextEditingController());
-  final List<FocusNode> _focusNodes = List.generate(6, (index) => FocusNode());
+class _OTPScreenState extends State<OTPScreen>
+    with SingleTickerProviderStateMixin {
+  final List<TextEditingController> _controllers =
+      List.generate(6, (index) => TextEditingController());
+  final List<FocusNode> _focusNodes =
+      List.generate(6, (index) => FocusNode());
   final AuthService _authService = AuthService();
-  int _resendTimer = 60;
+
   bool _isVerifying = false;
   bool _canResend = false;
-  
+  int _resendTimer = 60;
+  late AnimationController _fadeController;
+
   @override
   void initState() {
     super.initState();
+    _fadeController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..forward();
     _startResendTimer();
-    // Auto-focus first field
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _focusNodes[0].requestFocus();
     });
   }
-  
+
   @override
   void dispose() {
-    for (var controller in _controllers) {
-      controller.dispose();
-    }
-    for (var focusNode in _focusNodes) {
-      focusNode.dispose();
-    }
+    for (var c in _controllers) c.dispose();
+    for (var f in _focusNodes) f.dispose();
+    _fadeController.dispose();
     super.dispose();
   }
-  
-  void _startResendTimer() {
-    setState(() {
-      _canResend = false;
-    });
-    
-    Future.delayed(const Duration(seconds: 1), () {
-      if (mounted && _resendTimer > 0) {
-        setState(() {
-          _resendTimer--;
-        });
-        _startResendTimer();
-      } else if (mounted) {
-        setState(() {
-          _canResend = true;
-        });
-      }
-    });
+
+  void _startResendTimer() async {
+    setState(() => _canResend = false);
+    for (int i = 60; i >= 0; i--) {
+      await Future.delayed(const Duration(seconds: 1));
+      if (!mounted) return;
+      setState(() => _resendTimer = i);
+    }
+    setState(() => _canResend = true);
   }
-  
+
   void _onCodeChanged(String value, int index) {
     if (value.isNotEmpty && index < 5) {
       _focusNodes[index + 1].requestFocus();
     }
-    
-    // Check if all fields are filled
-    bool allFilled = _controllers.every((controller) => controller.text.isNotEmpty);
-    if (allFilled) {
-      // Remove focus to hide keyboard
+    bool filled = _controllers.every((c) => c.text.isNotEmpty);
+    if (filled) {
       FocusScope.of(context).unfocus();
-      // Auto-verify when all fields are filled
       _verifyOTP();
     }
   }
-  
+
   void _onKeyEvent(RawKeyEvent event, int index) {
-    if (event is RawKeyDownEvent && event.logicalKey == LogicalKeyboardKey.backspace) {
+    if (event is RawKeyDownEvent &&
+        event.logicalKey == LogicalKeyboardKey.backspace) {
       if (_controllers[index].text.isEmpty && index > 0) {
         _focusNodes[index - 1].requestFocus();
       }
     }
   }
-  
+
   Future<void> _verifyOTP() async {
-    String otp = _controllers.map((controller) => controller.text).join();
-    
+    String otp = _controllers.map((c) => c.text).join();
     if (otp.length != 6) {
       _showError('Please enter complete OTP');
       return;
     }
-
-    setState(() {
-      _isVerifying = true;
-    });
-
+    setState(() => _isVerifying = true);
     try {
-      final response = await _authService.verifyOtp(widget.phoneNumber, otp);
-
-      setState(() {
-        _isVerifying = false;
-      });
-
-      if (response.isSuccess) {
-        final data = response.data!;
-        final isNewUser = data['user_created'] ?? false;
-        
-        // Show success message
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                isNewUser 
-                    ? 'Account created successfully! Welcome to SwiftRide.' 
-                    : 'Welcome back!',
-              ),
-              backgroundColor: Colors.green,
-              duration: const Duration(seconds: 2),
-            ),
-          );
-
-          // Navigate to home screen and remove all previous routes
-          Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => const MainNavigationScreen()),
-            (route) => false,
-          );
-        }
+      final res = await _authService.verifyOtp(widget.phoneNumber, otp);
+      setState(() => _isVerifying = false);
+      if (res.isSuccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Welcome to SwiftRide!'),
+            backgroundColor: Colors.green,
+          ),
+        );
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (_) => const MainNavigationScreen()),
+          (_) => false,
+        );
       } else {
-        _showError(response.error ?? 'Invalid OTP. Please try again.');
-        // Clear OTP fields on error
-        for (var controller in _controllers) {
-          controller.clear();
-        }
+        _showError(res.error ?? 'Invalid OTP');
+        for (var c in _controllers) c.clear();
         _focusNodes[0].requestFocus();
       }
-    } catch (e) {
-      setState(() {
-        _isVerifying = false;
-      });
-      _showError('Network error. Please check your connection and try again.');
-      // Clear OTP fields on error
-      for (var controller in _controllers) {
-        controller.clear();
-      }
-      _focusNodes[0].requestFocus();
+    } catch (_) {
+      setState(() => _isVerifying = false);
+      _showError('Network error. Please try again.');
     }
   }
 
   Future<void> _resendOTP() async {
     if (!_canResend) return;
-    
     setState(() {
       _resendTimer = 60;
     });
     _startResendTimer();
-
     try {
-      final response = await _authService.sendOtp(widget.phoneNumber);
-
-      if (response.isSuccess) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(response.data?['message'] ?? 'New OTP sent successfully'),
-              backgroundColor: Colors.green,
-              duration: const Duration(seconds: 3),
-            ),
-          );
-        }
+      final res = await _authService.sendOtp(widget.phoneNumber);
+      if (res.isSuccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(res.data?['message'] ?? 'New OTP sent successfully'),
+            backgroundColor: Colors.green,
+          ),
+        );
       } else {
-        _showError(response.error ?? 'Failed to resend OTP');
+        _showError(res.error ?? 'Failed to resend OTP');
       }
-    } catch (e) {
-      _showError('Network error. Please check your connection and try again.');
+    } catch (_) {
+      _showError('Network error. Please try again.');
     }
   }
 
-  void _showError(String message) {
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(message),
-          backgroundColor: Colors.red,
-          duration: const Duration(seconds: 4),
-        ),
-      );
-    }
+  void _showError(String msg) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(msg), backgroundColor: Colors.red),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final primaryColor = const Color(0xFF2f5f76);
+    final backgroundColor =
+        isDark ? const Color(0xFF1A1A1A) : const Color(0xFFF5F6F8);
+
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Back button
-              IconButton(
-                onPressed: () => Navigator.pop(context),
-                icon: const Icon(
-                  Icons.arrow_back,
-                  color: Colors.white,
+      backgroundColor: backgroundColor,
+      resizeToAvoidBottomInset: true,
+      body: FadeTransition(
+        opacity: _fadeController,
+        child: SafeArea(
+          child: SingleChildScrollView(
+            padding: EdgeInsets.only(
+              left: 28,
+              right: 28,
+              top: 40,
+              bottom: MediaQuery.of(context).viewInsets.bottom + 24,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: IconButton(
+                    onPressed: () => Navigator.pop(context),
+                    icon: Icon(Icons.arrow_back, color: primaryColor),
+                  ),
                 ),
-                padding: EdgeInsets.zero,
-                alignment: Alignment.centerLeft,
-              ),
-              
-              const SizedBox(height: 32),
-              
-              // Title
-              Text(
-                'Enter the code',
-                style: AppTextStyles.heading1.copyWith(
-                  color: Colors.white,
+                const SizedBox(height: 40),
+
+                Icon(
+                  Icons.directions_car_rounded,
+                  color: primaryColor,
+                  size: 60,
                 ),
-              ),
-              
-              const SizedBox(height: 16),
-              
-              // Subtitle with phone number
-              Text(
-                'A 6-digit code was sent to\n${widget.phoneNumber}',
-                style: AppTextStyles.body.copyWith(
-                  color: Colors.grey[400],
-                  height: 1.5,
+                const SizedBox(height: 12),
+
+                Text(
+                  "SwiftRide",
+                  style: TextStyle(
+                    color: primaryColor,
+                    fontSize: 34,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: -1.2,
+                  ),
                 ),
-              ),
-              
-              const SizedBox(height: 8),
-              
-              // Info text
-              Text(
-                'Check your terminal for the OTP',
-                style: AppTextStyles.body.copyWith(
-                  color: AppColors.primary,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
+
+                const SizedBox(height: 8),
+                Text(
+                  "Enter the 6-digit code sent to\n${widget.phoneNumber}",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: primaryColor.withOpacity(0.8),
+                    fontSize: 15,
+                  ),
                 ),
-              ),
-              
-              const SizedBox(height: 48),
-              
-              // OTP input fields (6 digits)
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: List.generate(6, (index) {
-                  return Container(
-                    width: 50,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: _focusNodes[index].hasFocus 
-                            ? AppColors.primary 
-                            : Colors.grey[600]!,
-                        width: 2,
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: RawKeyboardListener(
-                      focusNode: FocusNode(),
-                      onKey: (event) => _onKeyEvent(event, index),
-                      child: TextField(
-                        controller: _controllers[index],
-                        focusNode: _focusNodes[index],
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
+
+                const SizedBox(height: 40),
+
+                // OTP Input Boxes
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: List.generate(6, (index) {
+                    return AnimatedContainer(
+                      duration: const Duration(milliseconds: 250),
+                      width: 50,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color: isDark ? Colors.black : Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color: _focusNodes[index].hasFocus
+                              ? primaryColor
+                              : primaryColor.withOpacity(0.4),
+                          width: _focusNodes[index].hasFocus ? 2.2 : 1.2,
                         ),
-                        keyboardType: TextInputType.number,
-                        maxLength: 1,
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                          counterText: '',
-                        ),
-                        inputFormatters: [
-                          FilteringTextInputFormatter.digitsOnly,
-                        ],
-                        onChanged: (value) => _onCodeChanged(value, index),
-                        onTap: () {
-                          _controllers[index].selection = TextSelection.fromPosition(
-                            TextPosition(offset: _controllers[index].text.length),
-                          );
-                        },
+                        boxShadow: _focusNodes[index].hasFocus
+                            ? [
+                                BoxShadow(
+                                  color: primaryColor.withOpacity(0.2),
+                                  blurRadius: 6,
+                                  spreadRadius: 1,
+                                ),
+                              ]
+                            : [],
                       ),
-                    ),
-                  );
-                }),
-              ),
-              
-              if (_isVerifying) ...[
-                const SizedBox(height: 24),
-                Center(
-                  child: Column(
+                      child: RawKeyboardListener(
+                        focusNode: FocusNode(),
+                        onKey: (e) => _onKeyEvent(e, index),
+                        child: TextField(
+                          controller: _controllers[index],
+                          focusNode: _focusNodes[index],
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: primaryColor,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 2,
+                          ),
+                          keyboardType: TextInputType.number,
+                          maxLength: 1,
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            counterText: '',
+                          ),
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly,
+                          ],
+                          onChanged: (val) => _onCodeChanged(val, index),
+                        ),
+                      ),
+                    );
+                  }),
+                ),
+
+                const SizedBox(height: 40),
+
+                if (_isVerifying)
+                  Column(
                     children: [
-                      const CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
+                      CircularProgressIndicator(
+                        valueColor:
+                            AlwaysStoppedAnimation<Color>(primaryColor),
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Verifying...',
+                        "Verifying...",
                         style: TextStyle(
-                          color: Colors.grey[400],
-                          fontSize: 14,
+                          color: primaryColor.withOpacity(0.8),
                         ),
                       ),
                     ],
                   ),
-                ),
-              ],
-              
-              const SizedBox(height: 32),
-              
-              // Resend timer
-              Center(
-                child: _canResend
+
+                const SizedBox(height: 60),
+
+                _canResend
                     ? TextButton(
                         onPressed: _resendOTP,
                         child: Text(
-                          'Resend code',
-                          style: AppTextStyles.body.copyWith(
-                            color: AppColors.primary,
-                            fontWeight: FontWeight.bold,
+                          "Resend code",
+                          style: TextStyle(
+                            color: primaryColor,
                             fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       )
                     : Text(
-                        'Resend code in $_resendTimer seconds',
-                        style: AppTextStyles.body.copyWith(
-                          color: Colors.grey[400],
+                        "Resend code in $_resendTimer s",
+                        style: TextStyle(
+                          color: primaryColor.withOpacity(0.7),
                         ),
                       ),
-              ),
-              
-              const SizedBox(height: 24),
-              
-              // Try different method
-              Center(
-                child: TextButton(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Alternative verification methods coming soon'),
-                        backgroundColor: Colors.orange,
-                      ),
-                    );
-                  },
-                  child: Text(
-                    'Try a different method',
-                    style: AppTextStyles.body.copyWith(
-                      color: AppColors.primary,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
     );
   }
 }
-// ==================== api_client.dart ====================
