@@ -1,0 +1,236 @@
+Current Structure
+
+.
+- backend/
+  - accounts/
+    - admin.py
+    - apps.py
+    - migrations/
+      - 0001_initial.py
+      - 0002_alter_user_managers.py
+    - models.py
+    - serializers.py
+    - urls.py
+    - views.py
+  - locations/
+    - admin.py
+    - apps.py
+    - migrations/
+      - 0001_initial.py
+    - models.py
+    - serializers.py
+    - urls.py
+    - views.py
+  - rides/
+    - admin.py
+    - apps.py
+    - migrations/
+      - 0001_initial.py
+    - models.py
+    - serializers.py
+    - urls.py
+    - views.py
+  - swiftride/
+    - asgi.py
+    - settings.py
+    - urls.py
+    - wsgi.py
+  - manage.py
+  - requirements.txt
+  - db.sqlite3
+
+- swiftride/
+  - analysis_options.yaml
+  - pubspec.yaml
+  - pubspec.lock
+  - lib/
+    - main.dart
+    - constants/
+      - app_dimensions.dart
+      - app_strings.dart
+      - colors.dart
+      - text_styles.dart
+    - models/
+      - location.dart
+      - ride.dart
+      - user.dart
+    - routes/
+      - app_routes.dart
+      - route_arguments.dart
+    - screens/
+      - splash_screen.dart
+      - main/
+        - home_screen.dart
+        - main_navigation_screen.dart
+      - rides/
+        - rides_screen.dart
+      - rides_booking/
+        - destination_selection_screen.dart
+        - ride_options_screen.dart
+        - driver_matching_screen.dart
+        - ride_tracking_screen.dart
+        - ride_completion_screen.dart
+      - auth/
+        - auth_screen.dart
+        - otp_screen.dart
+      - account/
+        - account_screen.dart
+        - account_settings_screen.dart (deprecated/duplicated)
+      - test/
+        - auth_screen.dart
+        - account_screen.dart
+        - home_screen.dart
+        - rides_screen.dart
+        - ...
+    - services/
+      - api_client.dart
+      - auth_service.dart
+      - location_service.dart
+      - navigation_service.dart
+      - ride_service.dart
+    - widgets/
+      - common/
+        - location_item_widget.dart
+        - menu_item_widget.dart
+        - menu_section_widget.dart
+      - dialogs/
+        - delete_account_dialog.dart
+        - logout_dialog.dart
+      - ride_cards/
+        - upcoming_ride_card.dart
+        - past_ride_card.dart
+  - assets/
+    - icons/
+    - images/
+  - android/ ...
+  - ios/ ...
+  - web/ ...
+  - windows/ ...
+  - macos/ ...
+  - linux/ ...
+  - test/
+    - widget_test.dart
+
+
+Proposed Improved Structure (Feature-first + Core Shared)
+
+.
+- backend/
+  - accounts/
+  - locations/
+  - rides/
+  - api/
+    - urls.py
+    - views.py
+    - serializers/
+    - permissions.py
+  - swiftride/
+    - settings.py
+    - urls.py
+  - manage.py
+  - requirements.txt
+
+- swiftride/
+  - analysis_options.yaml
+  - pubspec.yaml
+  - assets/
+    - images/
+    - icons/
+    - translations/
+  - lib/
+    - core/
+      - constants/
+        - colors.dart
+        - text_styles.dart
+        - app_dimensions.dart
+        - app_strings.dart
+      - routing/
+        - app_router.dart (wraps route generation)
+        - route_paths.dart
+      - services/
+        - api_client.dart
+        - navigation_service.dart
+        - location_service.dart
+      - widgets/
+        - common/
+          - buttons/
+          - typography/
+          - containers/
+        - dialogs/
+          - logout_dialog.dart
+          - delete_account_dialog.dart
+      - utils/
+        - validators.dart
+        - formatters.dart
+    - features/
+      - splash/
+        - presentation/
+          - splash_screen.dart
+      - auth/
+        - data/
+          - auth_service.dart
+        - domain/
+          - models/
+            - user.dart
+        - presentation/
+          - auth_screen.dart
+          - otp_screen.dart
+      - home/
+        - presentation/
+          - home_screen.dart
+      - rides/
+        - data/
+          - ride_service.dart
+        - domain/
+          - models/
+            - ride.dart
+        - presentation/
+          - rides_screen.dart
+          - booking/
+            - destination_selection_screen.dart
+            - ride_options_screen.dart
+            - driver_matching_screen.dart
+            - ride_tracking_screen.dart
+            - ride_completion_screen.dart
+      - account/
+        - domain/
+          - models/
+            - account_settings.dart (if needed)
+        - presentation/
+          - account_screen.dart (integrated settings section)
+      - shell/
+        - presentation/
+          - main_navigation_screen.dart (tab shell)
+    - app.dart (MaterialApp + router)
+    - main.dart
+  - test/
+    - widget_test.dart
+
+
+Migration Notes (Current → Proposed)
+
+- swiftride/lib/constants/* → swiftride/lib/core/constants/*
+- swiftride/lib/services/navigation_service.dart → swiftride/lib/core/services/navigation_service.dart
+- swiftride/lib/services/api_client.dart → swiftride/lib/core/services/api_client.dart
+- swiftride/lib/services/location_service.dart → swiftride/lib/core/services/location_service.dart
+- swiftride/lib/services/ride_service.dart → swiftride/lib/features/rides/data/ride_service.dart
+- swiftride/lib/models/ride.dart → swiftride/lib/features/rides/domain/models/ride.dart
+- swiftride/lib/models/user.dart → swiftride/lib/features/auth/domain/models/user.dart
+- swiftride/lib/screens/splash_screen.dart → swiftride/lib/features/splash/presentation/splash_screen.dart
+- swiftride/lib/screens/main/main_navigation_screen.dart → swiftride/lib/features/shell/presentation/main_navigation_screen.dart
+- swiftride/lib/screens/main/home_screen.dart → swiftride/lib/features/home/presentation/home_screen.dart
+- swiftride/lib/screens/rides/rides_screen.dart → swiftride/lib/features/rides/presentation/rides_screen.dart
+- swiftride/lib/screens/rides_booking/* → swiftride/lib/features/rides/presentation/booking/*
+- swiftride/lib/screens/auth/* → swiftride/lib/features/auth/presentation/*
+- swiftride/lib/screens/account/account_screen.dart → swiftride/lib/features/account/presentation/account_screen.dart
+- swiftride/lib/widgets/common/* → swiftride/lib/core/widgets/common/*
+- swiftride/lib/widgets/dialogs/* → swiftride/lib/core/widgets/dialogs/*
+- swiftride/lib/routes/* → swiftride/lib/core/routing/* (rename to app_router.dart + route_paths.dart)
+
+Backend
+- Keep Django apps as-is; optionally introduce backend/api/ to group unified REST endpoints and shared API concerns (pagination, permissions, throttling). Update root urls.py to include api.urls.
+
+Rationale
+- Feature-first structure clusters data/domain/presentation per feature, improving modularity and scalability (common in large Flutter apps and similar to Uber/Bolt patterns).
+- Core shared layer centralizes cross-cutting concerns (routing, services, widgets, design tokens) for consistency and reuse.
+- Clear ownership boundaries simplify navigation shell management and reduce duplication (e.g., Account settings integrated within Account feature).

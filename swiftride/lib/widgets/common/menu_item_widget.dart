@@ -1,4 +1,3 @@
-
 // ==================== widgets/common/menu_item_widget.dart ====================
 import 'package:flutter/material.dart';
 
@@ -8,6 +7,10 @@ class MenuItemWidget extends StatelessWidget {
   final String? subtitle;
   final bool isDestructive;
   final VoidCallback? onTap;
+  final Color? textColor;
+  final Color? cardColor;
+  final Color? subtitleColor;
+  final Color? borderColor;
 
   const MenuItemWidget({
     super.key,
@@ -16,10 +19,25 @@ class MenuItemWidget extends StatelessWidget {
     this.subtitle,
     this.isDestructive = false,
     this.onTap,
+    this.textColor,
+    this.cardColor,
+    this.subtitleColor,
+    this.borderColor,
   });
 
   @override
   Widget build(BuildContext context) {
+    final effectiveTextColor = isDestructive 
+        ? Colors.red 
+        : (textColor ?? Colors.white);
+    
+    final effectiveSubtitleColor = subtitleColor ?? Colors.grey[400];
+    
+    final effectiveBorderColor = borderColor ?? 
+        (cardColor != null && cardColor == Colors.white 
+            ? Colors.grey[300] 
+            : Colors.grey[800]);
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -27,7 +45,7 @@ class MenuItemWidget extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border(
             bottom: BorderSide(
-              color: Colors.grey[800]!,
+              color: effectiveBorderColor!,
               width: 0.5,
             ),
           ),
@@ -36,7 +54,7 @@ class MenuItemWidget extends StatelessWidget {
           children: [
             Icon(
               icon,
-              color: isDestructive ? Colors.red : Colors.white,
+              color: effectiveTextColor,
               size: 24,
             ),
             const SizedBox(width: 16),
@@ -47,15 +65,16 @@ class MenuItemWidget extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                      color: isDestructive ? Colors.red : Colors.white,
+                      color: effectiveTextColor,
                       fontSize: 16,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                   if (subtitle != null)
                     Text(
                       subtitle!,
                       style: TextStyle(
-                        color: Colors.grey[400],
+                        color: effectiveSubtitleColor,
                         fontSize: 14,
                       ),
                     ),
@@ -64,7 +83,7 @@ class MenuItemWidget extends StatelessWidget {
             ),
             Icon(
               Icons.arrow_forward_ios,
-              color: Colors.grey[600],
+              color: effectiveSubtitleColor,
               size: 16,
             ),
           ],

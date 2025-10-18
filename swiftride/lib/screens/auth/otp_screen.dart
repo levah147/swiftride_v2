@@ -20,8 +20,7 @@ class _OTPScreenState extends State<OTPScreen>
     with SingleTickerProviderStateMixin {
   final List<TextEditingController> _controllers =
       List.generate(6, (index) => TextEditingController());
-  final List<FocusNode> _focusNodes =
-      List.generate(6, (index) => FocusNode());
+  final List<FocusNode> _focusNodes = List.generate(6, (index) => FocusNode());
   final AuthService _authService = AuthService();
 
   bool _isVerifying = false;
@@ -68,15 +67,6 @@ class _OTPScreenState extends State<OTPScreen>
     if (filled) {
       FocusScope.of(context).unfocus();
       _verifyOTP();
-    }
-  }
-
-  void _onKeyEvent(RawKeyEvent event, int index) {
-    if (event is RawKeyDownEvent &&
-        event.logicalKey == LogicalKeyboardKey.backspace) {
-      if (_controllers[index].text.isEmpty && index > 0) {
-        _focusNodes[index - 1].requestFocus();
-      }
     }
   }
 
@@ -144,10 +134,8 @@ class _OTPScreenState extends State<OTPScreen>
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final primaryColor = const Color(0xFF2f5f76);
-    final backgroundColor =
-        isDark ? const Color(0xFF1A1A1A) : const Color(0xFFF5F6F8);
+    final primaryColor = const Color(0xFF0066FF);
+    final backgroundColor = const Color(0xFF0A0A0A);
 
     return Scaffold(
       backgroundColor: backgroundColor,
@@ -157,37 +145,57 @@ class _OTPScreenState extends State<OTPScreen>
         child: SafeArea(
           child: SingleChildScrollView(
             padding: EdgeInsets.only(
-              left: 28,
-              right: 28,
-              top: 40,
-              bottom: MediaQuery.of(context).viewInsets.bottom + 24,
+              left: 24,
+              right: 24,
+              top: 20,
+              bottom: MediaQuery.of(context).viewInsets.bottom + 20,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Align(
                   alignment: Alignment.centerLeft,
                   child: IconButton(
                     onPressed: () => Navigator.pop(context),
-                    icon: Icon(Icons.arrow_back, color: primaryColor),
+                    icon: Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
 
-                Icon(
-                  Icons.directions_car_rounded,
-                  color: primaryColor,
-                  size: 60,
+                Container(
+                  width: 80,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF0066FF), Color(0xFF00D9FF)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: primaryColor.withOpacity(0.4),
+                        blurRadius: 20,
+                        spreadRadius: 2,
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.directions_car_rounded,
+                    color: Colors.white,
+                    size: 40,
+                  ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 16),
 
-                Text(
+                const Text(
                   "SwiftRide",
                   style: TextStyle(
-                    color: primaryColor,
-                    fontSize: 34,
+                    color: Colors.white,
+                    fontSize: 28,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: -1.2,
+                    letterSpacing: -1.0,
                   ),
                 ),
 
@@ -196,64 +204,60 @@ class _OTPScreenState extends State<OTPScreen>
                   "Enter the 6-digit code sent to\n${widget.phoneNumber}",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: primaryColor.withOpacity(0.8),
-                    fontSize: 15,
+                    color: Colors.white.withOpacity(0.8),
+                    fontSize: 14,
                   ),
                 ),
 
-                const SizedBox(height: 40),
+                const SizedBox(height: 32),
 
                 // OTP Input Boxes
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: List.generate(6, (index) {
                     return AnimatedContainer(
                       duration: const Duration(milliseconds: 250),
-                      width: 50,
-                      height: 60,
+                      width: 45,
+                      height: 55,
                       decoration: BoxDecoration(
-                        color: isDark ? Colors.black : Colors.white,
-                        borderRadius: BorderRadius.circular(10),
+                        color: const Color(0xFF1A1A1A),
+                        borderRadius: BorderRadius.circular(12),
                         border: Border.all(
                           color: _focusNodes[index].hasFocus
                               ? primaryColor
-                              : primaryColor.withOpacity(0.4),
-                          width: _focusNodes[index].hasFocus ? 2.2 : 1.2,
+                              : Colors.grey[600]!,
+                          width: _focusNodes[index].hasFocus ? 2 : 1,
                         ),
                         boxShadow: _focusNodes[index].hasFocus
                             ? [
                                 BoxShadow(
-                                  color: primaryColor.withOpacity(0.2),
-                                  blurRadius: 6,
+                                  color: primaryColor.withOpacity(0.3),
+                                  blurRadius: 8,
                                   spreadRadius: 1,
                                 ),
                               ]
                             : [],
                       ),
-                      child: RawKeyboardListener(
-                        focusNode: FocusNode(),
-                        onKey: (e) => _onKeyEvent(e, index),
-                        child: TextField(
-                          controller: _controllers[index],
-                          focusNode: _focusNodes[index],
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: primaryColor,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 2,
-                          ),
-                          keyboardType: TextInputType.number,
-                          maxLength: 1,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            counterText: '',
-                          ),
-                          inputFormatters: [
-                            FilteringTextInputFormatter.digitsOnly,
-                          ],
-                          onChanged: (val) => _onCodeChanged(val, index),
+                      child: TextField(
+                        controller: _controllers[index],
+                        focusNode: _focusNodes[index],
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1,
                         ),
+                        keyboardType: TextInputType.number,
+                        maxLength: 1,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          counterText: '',
+                        ),
+                        inputFormatters: [
+                          FilteringTextInputFormatter.digitsOnly,
+                        ],
+                        onChanged: (val) => _onCodeChanged(val, index),
                       ),
                     );
                   }),
@@ -265,20 +269,20 @@ class _OTPScreenState extends State<OTPScreen>
                   Column(
                     children: [
                       CircularProgressIndicator(
-                        valueColor:
-                            AlwaysStoppedAnimation<Color>(primaryColor),
+                        valueColor: AlwaysStoppedAnimation<Color>(primaryColor),
                       ),
                       const SizedBox(height: 12),
                       Text(
                         "Verifying...",
                         style: TextStyle(
-                          color: primaryColor.withOpacity(0.8),
+                          color: Colors.white.withOpacity(0.8),
+                          fontSize: 14,
                         ),
                       ),
                     ],
                   ),
 
-                const SizedBox(height: 60),
+                const SizedBox(height: 40),
 
                 _canResend
                     ? TextButton(
@@ -288,14 +292,15 @@ class _OTPScreenState extends State<OTPScreen>
                           style: TextStyle(
                             color: primaryColor,
                             fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       )
                     : Text(
                         "Resend code in $_resendTimer s",
                         style: TextStyle(
-                          color: primaryColor.withOpacity(0.7),
+                          color: Colors.white.withOpacity(0.6),
+                          fontSize: 14,
                         ),
                       ),
               ],
