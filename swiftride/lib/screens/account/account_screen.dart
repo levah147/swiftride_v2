@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:swiftride/screens/drivers/become_driver_screen.dart';
+import 'package:swiftride/screens/drivers/driver_verification_screen.dart';
+import 'package:swiftride/services/driver_service.dart';
 import '../../constants/colors.dart';
 import '../../constants/app_strings.dart';
 import '../../constants/app_dimensions.dart';
@@ -24,18 +27,23 @@ class AccountScreen extends StatefulWidget {
 
 class _AccountScreenState extends State<AccountScreen> {
   final AuthService _authService = AuthService();
+  final DriverService _driverService = DriverService();
   final ImagePicker _imagePicker = ImagePicker();
   
   User? _user;
   bool _isLoading = true;
   bool _isDarkMode = true;
   bool _isUploadingImage = false;
+  bool _isDriver = false;
+  String? _driverStatus;
+  bool _hasIncompleteVerification = false;
   String _selectedLanguage = 'English - GB';
 
   @override
   void initState() {
     super.initState();
     _loadUserProfile();
+    _checkDriverStatus();
   }
 
   Future<void> _loadUserProfile() async {
@@ -65,6 +73,125 @@ class _AccountScreenState extends State<AccountScreen> {
       _showErrorSnackBar('Error: $e');
       debugPrint('❌ Exception loading profile: $e');
     }
+  }
+
+  Future<void> _checkDriverStatus() async {
+    try {
+      final response = await _driverService.getDriverStatus();
+      
+      if (!mounted) return;
+      
+      if (response.isSuccess && response.data != null) {
+        final data = response.data as Map<String, dynamic>;
+        
+        if (data.containsKey('is_driver') && data['is_driver'] == false) {
+          setState(() {
+            _isDriver = false;
+            _driverStatus = null;
+            _hasIncompleteVerification = false;
+          });
+          debugPrint('ℹ️ User is not a driver yet');
+          return;
+        }
+        
+        if (data.containsKey('status')) {
+          setState(() {
+            _isDriver = true;
+            _driverStatus = data['status'];
+          });
+          debugPrint('✅ Driver Status: $_driverStatus');
+          
+          // If driver is pending, check if verification is complete
+          if (_driverStatus == 'pending') {
+            _checkVerificationCompletion();
+          }
+        } else {
+          setState(() => _isDriver = false);
+        }
+      } else {
+        setState(() => _isDriver = false);
+        debugPrint('ℹ️ User is not a driver yet (API response not successful)');
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isDriver = false);
+      }
+      debugPrint('ℹ️ User is not a driver: $e');
+    }
+  }
+
+  Future<void> _checkVerificationCompletion() async {
+    try {
+      final response = await _driverService.getDocumentsStatus();
+      
+      if (!mounted) return;
+      
+      if (response.isSuccess && response.data != null) {
+        final data = response.data as Map<String, dynamic>;
+        final totalDocs = data['total_documents'] ?? 0;
+        final verifiedDocs = data['verified_documents'] ?? 0;
+        final totalImages = data['total_vehicle_images'] ?? 0;
+        
+        // Required: 3 documents (license, registration, insurance) + 2 images (vehicle, driver)
+        // OR accept if user has uploaded something
+        final allDocumentsUploaded = totalDocs >= 3 && totalImages >= 2;
+        
+        setState(() {
+          _hasIncompleteVerification = !allDocumentsUploaded;
+        });
+        
+        if (!allDocumentsUploaded) {
+          debugPrint('⚠️ Incomplete verification: $totalDocs docs, $totalImages images');
+          
+          // Auto-redirect to verification screen
+          Future.delayed(const Duration(milliseconds: 500), () {
+            if (mounted && _hasIncompleteVerification) {
+              _redirectToVerification();
+            }
+          });
+        } else {
+          debugPrint('✅ Verification complete: waiting for admin approval');
+        }
+      }
+    } catch (e) {
+      debugPrint('❌ Error checking verification completion: $e');
+    }
+  }
+
+  void _redirectToVerification() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.grey[900],
+        title: const Text(
+          'Complete Your Verification',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: const Text(
+          'You have an incomplete driver verification. Please complete uploading all required documents to proceed.',
+          style: TextStyle(color: Colors.grey),
+        ),
+        actions: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const DriverVerificationScreen(),
+                ),
+              ).then((_) {
+                _checkDriverStatus();
+              });
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.primary,
+            ),
+            child: const Text('Complete Verification'),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _pickAndUploadImage() async {
@@ -108,7 +235,7 @@ class _AccountScreenState extends State<AccountScreen> {
       context: context,
       builder: (_) => LogoutDialog(
         onConfirm: () async {
-          Navigator.pop(context); // Close dialog
+          Navigator.pop(context);
           await _authService.logout();
           if (mounted) widget.onNavigate('logout');
         },
@@ -121,7 +248,7 @@ class _AccountScreenState extends State<AccountScreen> {
       context: context,
       builder: (_) => DeleteAccountDialog(
         onConfirm: () async {
-          Navigator.pop(context); // Close dialog
+          Navigator.pop(context);
           setState(() => _isLoading = true);
           
           final response = await _authService.deleteAccount();
@@ -142,6 +269,16 @@ class _AccountScreenState extends State<AccountScreen> {
 
   void _toggleTheme() {
     setState(() => _isDarkMode = !_isDarkMode);
+  }
+
+  void _handleBecomeDriver() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const BecomeDriverScreen(),
+      ),
+    ).then((_) {
+      _checkDriverStatus();
+    });
   }
 
   void _showErrorSnackBar(String message) {
@@ -230,8 +367,7 @@ class _AccountScreenState extends State<AccountScreen> {
     );
   }
 
-  Widget _buildProfileSection(Color? bgColor, Color? textColor, Color? cardColor, Color? secondaryText)
- {
+  Widget _buildProfileSection(Color? bgColor, Color? textColor, Color? cardColor, Color? secondaryText) {
     return Container(
       color: bgColor,
       padding: const EdgeInsets.all(AppDimensions.paddingLarge),
@@ -264,12 +400,7 @@ class _AccountScreenState extends State<AccountScreen> {
                           _user!.profilePictureUrl!,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
-                            debugPrint('Image load error: $error');
-                            return Icon(
-                              Icons.person,
-                              color: textColor,
-                              size: 50,
-                            );
+                            return Icon(Icons.person, color: textColor, size: 50);
                           },
                           loadingBuilder: (context, child, loadingProgress) {
                             if (loadingProgress == null) return child;
@@ -283,11 +414,7 @@ class _AccountScreenState extends State<AccountScreen> {
                           },
                         ),
                       )
-                    : Icon(
-                        Icons.person,
-                        color: textColor,
-                        size: 50,
-                      ),
+                    : Icon(Icons.person, color: textColor, size: 50),
               ),
               Positioned(
                 bottom: 0,
@@ -310,11 +437,7 @@ class _AccountScreenState extends State<AccountScreen> {
                               strokeWidth: 2,
                             ),
                           )
-                        : const Icon(
-                            Icons.camera_alt,
-                            color: Colors.white,
-                            size: 18,
-                          ),
+                        : const Icon(Icons.camera_alt, color: Colors.white, size: 18),
                   ),
                 ),
               ),
@@ -323,19 +446,12 @@ class _AccountScreenState extends State<AccountScreen> {
           const SizedBox(height: 16),
           Text(
             _user?.fullName ?? 'User',
-            style: TextStyle(
-              color: textColor,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(color: textColor, fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 4),
           Text(
             _user?.phoneNumber ?? 'No phone',
-            style: TextStyle(
-              color: secondaryText,
-              fontSize: 14,
-            ),
+            style: TextStyle(color: secondaryText, fontSize: 14),
           ),
           const SizedBox(height: 12),
           Container(
@@ -414,11 +530,7 @@ class _AccountScreenState extends State<AccountScreen> {
         children: [
           Text(
             AppStrings.savedPlaces,
-            style: TextStyle(
-              color: textColor,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(color: textColor, fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
           MenuSectionWidget(
@@ -528,51 +640,147 @@ class _AccountScreenState extends State<AccountScreen> {
   }
 
   Widget _buildBecomeDriverCTA(Color textColor) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
-      padding: const EdgeInsets.all(AppDimensions.paddingLarge),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            AppColors.primary,
-            AppColors.primary.withOpacity(0.8),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.primary.withOpacity(0.4),
-            blurRadius: 15,
-            spreadRadius: 2,
-          ),
-        ],
-      ),
-      child: const Row(
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  AppStrings.becomeADriver,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 4),
-                Text(
-                  AppStrings.earnMoneyOnSchedule,
-                  style: TextStyle(color: Colors.white70, fontSize: 14),
-                ),
-              ],
+    if (_isDriver) {
+      if (_hasIncompleteVerification) {
+        return Container(
+          margin: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
+          padding: const EdgeInsets.all(AppDimensions.paddingLarge),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.orange.withOpacity(0.8), Colors.orange.withOpacity(0.6)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.orange.withOpacity(0.4),
+                blurRadius: 15,
+                spreadRadius: 2,
+              ),
+            ],
           ),
-          Icon(Icons.arrow_forward, color: Colors.white),
-        ],
+          child: const Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Complete Verification',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      'Upload remaining documents',
+                      style: TextStyle(color: Colors.white70, fontSize: 14),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.warning, color: Colors.white, size: 32),
+            ],
+          ),
+        );
+      }
+
+      return Container(
+        margin: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
+        padding: const EdgeInsets.all(AppDimensions.paddingLarge),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.green.withOpacity(0.8), Colors.green.withOpacity(0.6)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.green.withOpacity(0.4),
+              blurRadius: 15,
+              spreadRadius: 2,
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Driver Account',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Status: ${_driverStatus?.toUpperCase() ?? 'PENDING'}',
+                    style: const TextStyle(color: Colors.white70, fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.check_circle, color: Colors.white, size: 32),
+          ],
+        ),
+      );
+    }
+
+    return GestureDetector(
+      onTap: _handleBecomeDriver,
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
+        padding: const EdgeInsets.all(AppDimensions.paddingLarge),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.primary,
+              AppColors.primary.withOpacity(0.8),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primary.withOpacity(0.4),
+              blurRadius: 15,
+              spreadRadius: 2,
+            ),
+          ],
+        ),
+        child: const Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AppStrings.becomeADriver,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    AppStrings.earnMoneyOnSchedule,
+                    style: TextStyle(color: Colors.white70, fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.arrow_forward, color: Colors.white),
+          ],
+        ),
       ),
     );
   }

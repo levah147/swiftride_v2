@@ -298,12 +298,12 @@ class _SplashScreenState extends State<SplashScreen>
                         SizedBox(
                           width: maxW * 0.1,
                           height: maxW * 0.1,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            valueColor: AlwaysStoppedAnimation<Color>(
-                              AppColors.primary.withOpacity(0.5),
-                            ),
-                          ),
+                          // child: CircularProgressIndicator(
+                          //   strokeWidth: 2,
+                          //   valueColor: AlwaysStoppedAnimation<Color>(
+                          //     AppColors.primary.withOpacity(0.5),
+                          //   ),
+                          // ),
                         ),
                       ],
                     ),
