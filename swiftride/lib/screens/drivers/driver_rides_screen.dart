@@ -95,14 +95,14 @@ class _DriverRidesScreenState extends State<DriverRidesScreen> {
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.orange, width: 1),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
-                    const Icon(Icons.info, color: Colors.orange),
-                    const SizedBox(width: 12),
+                    Icon(Icons.info, color: Colors.orange),
+                    SizedBox(width: 12),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             'You\'re offline',
                             style: TextStyle(
@@ -130,11 +130,11 @@ class _DriverRidesScreenState extends State<DriverRidesScreen> {
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.green, width: 1),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
-                    const Icon(Icons.check_circle, color: Colors.green),
-                    const SizedBox(width: 12),
-                    const Expanded(
+                    Icon(Icons.check_circle, color: Colors.green),
+                    SizedBox(width: 12),
+                    Expanded(
                       child: Text(
                         'You\'re online and ready to receive rides',
                         style: TextStyle(color: Colors.green, fontSize: 12),

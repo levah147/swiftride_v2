@@ -10,6 +10,8 @@ urlpatterns = [
     path('api/rides/', include('rides.urls')),
     path('api/locations/', include('locations.urls')),
     path('api/drivers/', include('drivers.urls')),
+    path('api/payments/', include('payments.urls')),  
+    path('api/vehicles/', include('vehicles.urls')),  # ← ADD THIS
 ]
 
 # Serve media files during development

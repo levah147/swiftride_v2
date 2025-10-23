@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'rides',
     'locations', 
     "drivers",
+    'vehicles', 
+    "payments",
 ]
 
 MIDDLEWARE = [
@@ -155,5 +157,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
 
+
+GOOGLE_MAPS_API_KEY = 'YOUR_GOOGLE_MAPS_API_KEY_HERE'
 # Custom user model
 AUTH_USER_MODEL = 'accounts.User'

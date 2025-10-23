@@ -12,7 +12,7 @@ urlpatterns = [
     path('profile/update/', views.UserProfileUpdateView.as_view(), name='user_profile_update'),
     path('delete-account/', views.delete_account, name='delete_account'),
     
-    # Saved Locations
-    path('saved-locations/', views.SavedLocationListCreateView.as_view(), name='saved_locations'),
-    path('saved-locations/<int:pk>/', views.SavedLocationDetailView.as_view(), name='saved_location_detail'),
+    # # Saved Locations
+    # path('saved-locations/', views.SavedLocationListCreateView.as_view(), name='saved_locations'),
+    # path('saved-locations/<int:pk>/', views.SavedLocationDetailView.as_view(), name='saved_location_detail'),
 ]

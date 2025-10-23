@@ -10,7 +10,7 @@ import random
 import string
 
 from .models import User, OTPVerification
-from locations.models import SavedLocation
+# from locations.models import SavedLocation
 
 from .serializers import (
     UserRegistrationSerializer, 
@@ -19,7 +19,7 @@ from .serializers import (
     UserProfileUpdateSerializer,
     LoginSerializer
 )
-from locations.serializers import SavedLocationSerializer
+# from locations.serializers import SavedLocationSerializer
 
 
 @api_view(['POST'])
@@ -222,22 +222,22 @@ def delete_account(request):
     }, status=status.HTTP_200_OK)
 
 
-class SavedLocationListCreateView(generics.ListCreateAPIView):
-    """List and create saved locations for current user"""
-    serializer_class = SavedLocationSerializer
-    permission_classes = [IsAuthenticated]
+# class SavedLocationListCreateView(generics.ListCreateAPIView):
+#     """List and create saved locations for current user"""
+#     serializer_class = SavedLocationSerializer
+#     permission_classes = [IsAuthenticated]
     
-    def get_queryset(self):
-        return SavedLocation.objects.filter(user=self.request.user)
+#     def get_queryset(self):
+#         return SavedLocation.objects.filter(user=self.request.user)
     
-    def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+#     def perform_create(self, serializer):
+#         serializer.save(user=self.request.user)
 
 
-class SavedLocationDetailView(generics.RetrieveUpdateDestroyAPIView):
-    """Retrieve, update, or delete a specific saved location"""
-    serializer_class = SavedLocationSerializer
-    permission_classes = [IsAuthenticated]
+# class SavedLocationDetailView(generics.RetrieveUpdateDestroyAPIView):
+#     """Retrieve, update, or delete a specific saved location"""
+#     serializer_class = SavedLocationSerializer
+#     permission_classes = [IsAuthenticated]
     
-    def get_queryset(self):
-        return SavedLocation.objects.filter(user=self.request.user)
+#     def get_queryset(self):
+#         return SavedLocation.objects.filter(user=self.request.user)
