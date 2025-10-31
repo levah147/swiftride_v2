@@ -22,7 +22,7 @@ from .views import (
     PlatformSettingsViewSet,
 )
 
-app_name = 'admin_dashboard'
+app_name = 'admin_dashboard_app'
 
 router = DefaultRouter()
 router.register(r'users', UserManagementViewSet, basename='users')

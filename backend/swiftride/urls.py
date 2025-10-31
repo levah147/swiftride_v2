@@ -17,7 +17,13 @@ urlpatterns = [
     path('api/notifications/', include('notifications.urls')),
     path('api/chat/', include('chat.urls')),
     path('api/support/', include('support.urls')),
-    path('api/analytics/', include('analytics.urls')),]
+    path('api/analytics/', include('analytics.urls')),
+    
+    path('api/promotions/', include('promotions.urls')),
+    path('api/safety/', include('safety.urls')),
+    path('api/admin_dashboard/', include('admin_dashboard_app.urls')),
+    
+    ]
 
 # Serve media files during development
 if settings.DEBUG:

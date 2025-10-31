@@ -144,3 +144,1767 @@ INFO 2025-10-31 01:24:32,608 autoreload D:\code\copy - fix\backend\swiftride\set
 INFO 2025-10-31 01:24:33,622 autoreload Watching for file changes with StatReloader
 INFO 2025-10-31 01:24:43,906 autoreload Watching for file changes with StatReloader
 INFO 2025-10-31 01:26:27,582 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:10:57,386 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:11:15,699 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 11:11:17,391 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:11:18,711 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 11:11:19,900 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:11:34,882 autoreload D:\code\copy - fix\backend\admin_dashboard_app\apps.py changed, reloading.
+INFO 2025-10-31 11:11:38,848 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:13:18,961 autoreload D:\code\copy - fix\backend\promotions\admin.py changed, reloading.
+INFO 2025-10-31 11:13:21,644 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:13:26,637 autoreload D:\code\copy - fix\backend\promotions\admin.py changed, reloading.
+INFO 2025-10-31 11:13:28,546 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:14:01,163 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 11:14:02,565 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:14:07,006 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 11:14:08,997 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 11:16:50,555 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:01:11,777 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:02:49,894 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:02:51,433 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:03:27,132 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:05:17,388 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:05:29,098 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:05:30,085 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:10:16,279 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:12:21,389 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:12:22,760 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:12:32,323 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:12:33,300 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:15:15,162 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:16:48,701 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:17:01,644 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:19:33,215 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:20:17,417 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:20:18,817 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:21:07,949 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:21:09,447 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:21:52,114 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:21:58,384 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:21:59,932 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:22:02,388 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:22:03,911 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:22:10,271 autoreload D:\code\copy - fix\backend\swiftride\urls.py changed, reloading.
+INFO 2025-10-31 21:22:11,772 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:23:28,740 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:23:30,049 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:24:21,390 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:24:28,804 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:24:30,446 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:24:40,064 autoreload D:\code\copy - fix\backend\swiftride\urls.py changed, reloading.
+INFO 2025-10-31 21:24:41,452 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:25:30,644 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:25:32,035 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:26:09,090 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:26:10,412 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:26:31,071 basehttp "GET /admin/accounts/user/ HTTP/1.1" 301 0
+INFO 2025-10-31 21:26:31,095 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03!ÞÂ\x19BÏb')
+ERROR 2025-10-31 21:26:31,095 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:26:31,098 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 21:26:31,099 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:26:38,904 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063**\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04ÀLUxô$sfcDt7\x88Ò\x01ÇïúM+õ<\x07Ð¶s,\x9d')
+ERROR 2025-10-31 21:26:38,907 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:26:38,908 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-10-31 21:26:38,909 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:26:38,909 basehttp code 400, message Bad request version ("\x16fcr¤\xad}Ä\x13fD5+%R\x83\x835ÌX-ô,\x10^ùsz»s[[#ªv\x99âHF7ú\x82R2%\x08Te¬f\x8b&\x96\x07ÍT³mê§'±Sÿ°}ö\x83\x91\x04´º")
+ERROR 2025-10-31 21:26:38,910 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:26:38,911 basehttp code 400, message Bad request version ('üæI\x9c')
+ERROR 2025-10-31 21:26:38,911 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:03,352 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í')
+ERROR 2025-10-31 21:27:03,359 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:03,362 basehttp code 400, message Bad request version ('Ëç®Ì3Ä\x11ò:s')
+INFO 2025-10-31 21:27:03,362 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 21:27:03,365 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 21:27:03,379 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:03,382 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-10-31 21:27:03,383 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:09,529 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 301 0
+INFO 2025-10-31 21:27:09,536 basehttp code 400, message Bad request version ('ÐObà\x80ÙÝ\x96±ªd')
+ERROR 2025-10-31 21:27:09,537 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:09,538 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 21:27:09,540 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:16,375 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x15ã:èÓ\x1a}Ê{´¨·\x8d')
+ERROR 2025-10-31 21:27:16,378 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:16,378 basehttp code 400, message Bad request version ('ó\x9fÐµcû°\x11àj\x01\x93<,¢°XQyÌ\x94X¸â\x01¢02¹§ä2>¸¾ã\x97¸TëÏØ\x96\x11E')
+ERROR 2025-10-31 21:27:16,379 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:16,379 basehttp code 400, message Bad request version ('vÜä\x9d\x15Ëþ\x86G³*X0Æ2%\x81Ä*g¦³')
+ERROR 2025-10-31 21:27:16,380 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:16,381 basehttp code 400, message Bad request version ('dª`7¾àu\x15F\x7f\x7fqu§\x113Ý°\x9dB\x9aXû#o,á\x03\x92\x06¸ßsOà÷hE\x00_x\x04Q')
+ERROR 2025-10-31 21:27:16,381 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:22,221 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x89³Úë')
+ERROR 2025-10-31 21:27:22,223 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:22,225 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-10-31 21:27:22,225 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:22,225 basehttp code 400, message Bad request version ('Pèyz\x12\x95\x89,´p\x95\x18Oñc\x97â.ý´')
+ERROR 2025-10-31 21:27:22,226 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:22,227 basehttp code 400, message Bad request version ("\x19¸¤ÁW'\\YÏ£{Îù\x08çÃNxz\x9c¾\x96")
+ERROR 2025-10-31 21:27:22,227 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:30,958 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-10-31 21:27:30,979 basehttp code 400, message Bad request version ('¨´ä')
+ERROR 2025-10-31 21:27:30,979 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:30,987 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00\x00')
+ERROR 2025-10-31 21:27:30,988 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:37,724 basehttp code 400, message Bad request version ('\x08\x12ÂH\x11H\x14³Ø\x9e\x98\x13@=\x82\x9aúô')
+ERROR 2025-10-31 21:27:37,725 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:37,726 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03~÷¤\x90?Y\x03wh\x80v\x97¬ÎL¥±n!\x99õ6k#Ì\x98:îæx]è')
+ERROR 2025-10-31 21:27:37,727 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:27:59,934 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:28:14,621 basehttp code 400, message Bad request version ('-o\x11\x93N')
+ERROR 2025-10-31 21:28:14,625 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:28:14,627 basehttp code 400, message Bad request version ('£Y\x10\x89Â\x91¢IS\x81\x97¯ì\x94u;\x08ZÒ`xEö\x04¼I·\x9f\x92')
+ERROR 2025-10-31 21:28:14,627 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:29:12,869 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:29:14,113 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:31:27,405 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:33:12,153 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:33:21,924 basehttp code 400, message Bad request version ("Í)C\x07©¸¹\x17]U'<çDu¢|¸\\")
+ERROR 2025-10-31 21:33:21,926 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:21,926 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00')
+ERROR 2025-10-31 21:33:21,927 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:21,928 basehttp code 400, message Bad request version ('¡Ì«Kl\x9aBçéa*\x7fÁ\x8dæ\x03¤')
+ERROR 2025-10-31 21:33:21,928 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:21,928 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 21:33:21,929 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:30,059 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03V´/þ\x89ÖÑ\x88£\x0eY\x19')
+ERROR 2025-10-31 21:33:30,059 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:30,060 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03L\x01¢£Zy\x18/ª')
+ERROR 2025-10-31 21:33:30,061 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:47,397 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÚÚ\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04Àé\x93ÏÛ«')
+ERROR 2025-10-31 21:33:47,402 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:33:47,421 basehttp code 400, message Bad request version ('%\x9e8\x15}éi´ÙÔ')
+ERROR 2025-10-31 21:33:47,440 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:03,384 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-10-31 21:34:03,700 basehttp code 400, message Bad request version ('iÏ\x97põ}ÈÚvè7u÷*Ò\x18úúP\x876\x9a\x07÷ö«8\x00ð\x18RvêÿCÖ,\x0fèÕµ<Ù\x87¢öL\x87x.Æ§\x98Vü¢äî\x10\x19\xad\x80\x86(T\x86^ÏÈU\x11Òòhîö*ÁÍSbâ\x83((\x91\x03ïøäC\x82!Ùà³\x99&yÁ\x9a\x92×$¡èÜ·í}¸æHD3*QL\x8flzi\x1b\x02Ê£\x84/h')
+ERROR 2025-10-31 21:34:03,701 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:03,954 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x0b')
+ERROR 2025-10-31 21:34:03,955 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:04,017 basehttp code 400, message Bad request version ('£/\x00\x90»³6*Þ³âÈC~\x8av¿Ï¾\x951d\x9d²Ð+ÒÅhå¯\x06')
+ERROR 2025-10-31 21:34:04,018 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:04,267 basehttp code 400, message Bad request version ('é<÷ar®¼\x17\x16\x80ÀPS±\x16HÁäûÃ\x95%@¸kn-¢\x8ds\x97\x9eúa')
+ERROR 2025-10-31 21:34:04,269 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:12,175 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-10-31 21:34:12,502 basehttp code 400, message Bad request version ('ò§=A^:ª&\x9dh\xadL´\x0f\x8d´:\x8eÐÂÝÑ\x13\x16\x9a\x01')
+ERROR 2025-10-31 21:34:12,503 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:12,738 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 21:34:12,739 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:12,818 basehttp code 400, message Bad request version ('å,U\x00')
+ERROR 2025-10-31 21:34:12,819 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:34:13,051 basehttp code 400, message Bad request version (']\x17\x03zF0dòÝÜ\x13p°dóXd\x86')
+ERROR 2025-10-31 21:34:13,053 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:35:09,226 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:35:10,841 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:37:14,603 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:37:29,163 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-10-31 21:37:29,171 basehttp code 400, message Bad request version ('\x99\x95wfT;e\x99\x87Àh»Í¨')
+ERROR 2025-10-31 21:37:29,175 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:37:29,177 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 21:37:29,178 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:37:41,919 basehttp code 400, message Bad request version ('\x06ZojX\x99i\x96\x18~\x12@\x023Tq\x00B\\A*Î¤tÊ')
+ERROR 2025-10-31 21:37:41,920 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:37:41,924 basehttp code 400, message Bad request version ('J\x80L\x84')
+ERROR 2025-10-31 21:37:41,926 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:35,618 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:38:37,596 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:38:41,224 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e::\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-10-31 21:38:41,226 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:41,227 basehttp code 400, message Bad request version ('\x16\x8c{j¯\x02\x83`4')
+ERROR 2025-10-31 21:38:41,228 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:41,525 basehttp code 400, message Bad request version ('åzö')
+ERROR 2025-10-31 21:38:41,526 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:41,532 basehttp code 400, message Bad request version ('³\x00')
+INFO 2025-10-31 21:38:41,534 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eºº\x00\x00\x00')
+ERROR 2025-10-31 21:38:41,535 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 21:38:41,537 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:41,834 basehttp code 400, message Bad request version (')3\x8b\x18+hf[\x8arÁó\x14ï#sü1Ué\x9azQé\x11:ÌVÃrM|Å?\x9dâ:íÅ5±p¾\x1bRP¬')
+ERROR 2025-10-31 21:38:41,839 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,138 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-10-31 21:38:49,139 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,140 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-10-31 21:38:49,142 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,385 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-10-31 21:38:49,386 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,454 basehttp code 400, message Bad request version ('Pi')
+ERROR 2025-10-31 21:38:49,456 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,457 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-10-31 21:38:49,457 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:38:49,709 basehttp code 400, message Bad request version ('ºº\x00\x00\x00')
+ERROR 2025-10-31 21:38:49,710 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:39:28,415 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:39:30,659 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:39:46,506 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:39:49,111 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:43:27,359 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:43:29,141 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:44:19,499 basehttp code 400, message Bad request version ('Cp')
+ERROR 2025-10-31 21:44:19,500 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:19,500 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00\x12\x00\x00\x00#\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04ÀøÑa\x07¢¬;Ú')
+ERROR 2025-10-31 21:44:19,501 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:19,750 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06')
+ERROR 2025-10-31 21:44:19,751 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:19,811 basehttp code 400, message Bad request version ('Qõ')
+ERROR 2025-10-31 21:44:19,811 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:19,811 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03Pºå\x83©Y¡"½\x91v\x7fl\x89\x0f(ï6\x10%QÏ|%NÖPOß«Ñ§')
+ERROR 2025-10-31 21:44:19,812 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:20,061 basehttp code 400, message Bad request version ('OûmR')
+ERROR 2025-10-31 21:44:20,062 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:26,022 basehttp code 400, message Bad request version ('^3#\x833\x9c£Û\x94³\x93TqXÊ¨8µ\x1b\x04J\x01\x11l\x8ez*\x80')
+ERROR 2025-10-31 21:44:26,023 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:26,288 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E**\x00\x00\x00')
+ERROR 2025-10-31 21:44:26,290 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:26,339 basehttp code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eºº\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 21:44:26,340 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:26,604 basehttp code 400, message Bad request version ('KJo¡')
+ERROR 2025-10-31 21:44:26,605 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:42,056 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:44:46,467 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00\x00')
+ERROR 2025-10-31 21:44:46,470 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:46,472 basehttp code 400, message Bad request version ('¸©ê\x1aWd«,dY\x90Ü\x82F')
+ERROR 2025-10-31 21:44:46,473 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:57,241 basehttp code 400, message Bad request version ('Ò\x9bÜ¡µTü¡\x18\x9däÔ9\x19é\x89\x1aü/\x00')
+ERROR 2025-10-31 21:44:57,241 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:44:57,242 basehttp code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93úú\x00\x00\x00')
+ERROR 2025-10-31 21:44:57,243 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:17,690 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:45:19,496 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:45:28,246 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:45:29,792 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:45:31,656 basehttp code 400, message Bad request version ('Br2\x9d\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-10-31 21:45:31,657 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:31,658 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00')
+ERROR 2025-10-31 21:45:31,659 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:31,659 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93zz\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 21:45:31,659 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:31,660 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x1a\x1a\x00\x00\x00')
+ERROR 2025-10-31 21:45:31,661 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,269 basehttp code 400, message Bad request version ('\x01n\x1b]¿i;u\x8e\x02Ù\x89»¢k*\x82\x91¾ÔÌÕ\x16\x8b\x00e%\x87Ó\x91Ë15o\\\x8aaQtD\x81\x7f¼é')
+ERROR 2025-10-31 21:45:34,270 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,272 basehttp code 400, message Bad request version ('ã¶')
+ERROR 2025-10-31 21:45:34,272 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,294 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ÎP¹°×\x9f')
+ERROR 2025-10-31 21:45:34,299 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,299 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00')
+ERROR 2025-10-31 21:45:34,345 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,346 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-10-31 21:45:34,354 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:34,356 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-10-31 21:45:34,357 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:43,128 basehttp code 400, message Bad request version ('\x13îó\x11£2\x03ré\\ê2\x01Ñ«0\x95')
+ERROR 2025-10-31 21:45:43,129 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:43,130 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-10-31 21:45:43,130 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:46,655 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 21:45:46,657 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:46,661 basehttp code 400, message Bad request version ('\x7fÌV2\x88Ê^\x12°«ÐÌ1O×Otô14)³Eù¥Ñ$¾ë\x9c\x8fèà\x14\x95%¯ìÄyïÌ$d`:\x9d\x15gëËÏÆ¨²vcNÂ±\x99¬T2pÁ`BÁ\x01îË¼é:Ë+p\x19v\x89-é\x9b*>z\x94®')
+INFO 2025-10-31 21:45:46,662 basehttp code 400, message Bad request version ('±\x8e4ù\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00')
+ERROR 2025-10-31 21:45:46,662 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 21:45:46,662 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:46,667 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063JJ\x00\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04À7\x13Î\x0f\x17Î9#\x7fÜ¢¿X\x8a\x8fÂRÄñi')
+ERROR 2025-10-31 21:45:46,669 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:53,274 basehttp code 400, message Bad request version ('×Ìi@C\x96\x02=\x19ØO<\x12WÎR\x02]\x96\x11{ÚHS!X\x80Ü¿ù\x82µ\x15"¾bàÅ¥ø¦f0\x18&U\x1aòfiéV')
+ERROR 2025-10-31 21:45:53,274 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:45:53,276 basehttp code 400, message Bad request version ('\x9c·a\x8dS\x11»0\x90å\x05!\x98')
+ERROR 2025-10-31 21:45:53,277 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:46:06,751 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 21:46:08,319 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:52:37,100 basehttp code 400, message Bad request version ('PjÌê\x82ëk¼Ç\x04²Ä´Vý÷¿')
+ERROR 2025-10-31 21:52:37,101 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:37,102 basehttp code 400, message Bad request version ('Îg\x94Îmö\x9a\x11¾ü)\x8dF/\x9cÑ®$\x13t£7')
+ERROR 2025-10-31 21:52:37,102 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:37,115 basehttp code 400, message Bad request version ('o\x13\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 21:52:37,116 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:37,116 basehttp code 400, message Bad request syntax ("\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03r\x89zÝFqÜ'\x06")
+ERROR 2025-10-31 21:52:37,118 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:37,120 basehttp code 400, message Bad request version ('ûÞöÑ\x13ÐöÒ\x12@\x91S~û\x82/_\x19')
+ERROR 2025-10-31 21:52:37,121 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:37,156 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00')
+ERROR 2025-10-31 21:52:37,158 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:45,497 basehttp code 400, message Bad request version ('Ç')
+ERROR 2025-10-31 21:52:45,498 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:52:45,499 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-10-31 21:52:45,500 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:56:56,801 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 21:57:09,811 basehttp code 400, message Bad request version ('ï\x15<\x89ï')
+ERROR 2025-10-31 21:57:09,812 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:57:09,812 basehttp code 400, message Bad request version ('¶²*Ë\x83\x864\x07\x8c½h<Ñ´óI\x1b\x11ÍÓ\x10<"\x12Lú\x8cd³Ü7]\x00ÐÓeö¦K9\x8fÙ×îé§oO×W\x18Õ·')
+ERROR 2025-10-31 21:57:09,814 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:57:09,814 basehttp code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-10-31 21:57:09,815 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:57:09,815 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sêê\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 21:57:09,816 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:58:38,981 basehttp code 400, message Bad request version ("eN÷\x8d$Ea\x94,ºHiã|\x8bk¤^\x0eZ'1»ìL`\x18{_{\x8bi\x82O\x8aß")
+ERROR 2025-10-31 21:58:38,983 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:58:38,985 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ÁÏüà\x87ÏçkA½Ãf<\\ú5\x98Ê¨!\x16\x13\x84çÀ"')
+ERROR 2025-10-31 21:58:38,986 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:58:48,491 basehttp code 400, message Bad request version ('!\x14³\x8f`~6e%ëÁ')
+ERROR 2025-10-31 21:58:48,501 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 21:58:48,508 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-10-31 21:58:48,516 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:00:02,560 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:00:09,935 basehttp code 400, message Bad request version ('ô\x9e.ª\x80õÓåK\x15BZ\x93§L')
+ERROR 2025-10-31 22:00:09,936 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:00:09,938 basehttp code 400, message Bad request version ('?Ój\x94Z\x08\x9e°\x8a\x9bl\\¿Âì4Jæ³&lLµäÇ\x9fe-Úä&%\x00')
+ERROR 2025-10-31 22:00:09,943 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:00:42,922 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06szz\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 22:00:42,922 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:00:42,923 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00\x00')
+ERROR 2025-10-31 22:00:42,924 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:44,455 basehttp code 400, message Bad request version ('ð0º\xad\x07Zd\x9b\x91í\x83\x8d\x96¶\\JuYLg\x12\x14j^YÐ.\x83')
+ERROR 2025-10-31 22:02:44,456 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:44,457 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03')
+ERROR 2025-10-31 22:02:44,457 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:44,458 basehttp code 400, message Bad request version ('k68')
+ERROR 2025-10-31 22:02:44,458 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:44,459 basehttp code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93jj\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-10-31 22:02:44,460 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:56,833 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00')
+ERROR 2025-10-31 22:02:56,835 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:56,835 basehttp code 400, message Bad request version ('ïòË\x17\x12Ád\x19ßïfõ\\é\x05\x8a\x00')
+ERROR 2025-10-31 22:02:56,837 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:56,837 basehttp code 400, message Bad request version ('\x81\x947g\x95n\x0fß¤Ü°')
+ERROR 2025-10-31 22:02:56,838 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:56,838 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-10-31 22:02:56,839 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,409 basehttp code 400, message Bad request version ('ÎýB')
+ERROR 2025-10-31 22:02:59,410 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,410 basehttp code 400, message Bad request version ('|3QOJ)_ö0i')
+ERROR 2025-10-31 22:02:59,412 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,412 basehttp code 400, message Bad request version ('þBuJA\x8fó4eÌ·µÂ\x91JÆ-sZSZ\x1b;\x9e\x84ò»Q¢¥\x90ñæ°-\x89í{¦èûé#\x18áh\x93g.·\x0f¥ÂS\x8b·½\x1bÈ4ÒãQHw\x07®cpÞTØ+Ñ«Y%N»óÖïÚ}\x06ÕëÃUSäSVKÅ\x9bÑ>\x84ò|\x06ôDÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-10-31 22:02:59,414 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,414 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-10-31 22:02:59,415 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,990 basehttp code 400, message Bad request version ('·jLüµ\x8a')
+ERROR 2025-10-31 22:02:59,990 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:02:59,991 basehttp code 400, message Bad request version ('2\x87#Ç;ÎÑ¢+5A\x84B¤d°l\x94ç4^Ì¼Y')
+ERROR 2025-10-31 22:03:00,000 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,002 basehttp code 400, message Bad request version ('úzc×\x99V<b¢¾«\x83\\+Ê÷\x80_\x95\x86tcvIb')
+ERROR 2025-10-31 22:03:00,006 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,062 basehttp code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-10-31 22:03:00,069 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,500 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-10-31 22:03:00,501 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,502 basehttp code 400, message Bad request version ("g\x89\x140`±eµ,àúõö\x08D\x96\x14ñ\x8c®&\x97_'k9\x00°\x8e¡¹â")
+ERROR 2025-10-31 22:03:00,503 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,503 basehttp code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-10-31 22:03:00,504 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:03:00,505 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063êê\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00')
+ERROR 2025-10-31 22:03:00,506 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:05:50,632 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:06:11,180 basehttp code 400, message Bad request version ('¯7Ø9ÛAITSGÏ\x8f¡\x00')
+ERROR 2025-10-31 22:06:11,181 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:06:11,183 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-10-31 22:06:11,183 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:06:11,213 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x98ï\\-¢\x90\x90\x8cå\x14\x92Y\x17\x8e')
+ERROR 2025-10-31 22:06:11,249 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:06:11,249 basehttp code 400, message Bad request version ('\x00')
+ERROR 2025-10-31 22:06:11,253 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:06:11,266 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063**\x00\x00\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-10-31 22:06:11,268 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:06:11,269 basehttp code 400, message Bad request version ('ª')
+ERROR 2025-10-31 22:06:11,269 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:41,396 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:08:48,765 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x9a\x9a\x00\x00\x00')
+ERROR 2025-10-31 22:08:48,766 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:48,767 basehttp code 400, message Bad request version ('F')
+ERROR 2025-10-31 22:08:48,768 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:48,768 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-10-31 22:08:48,769 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:48,769 basehttp code 400, message Bad request version ('P\\\x13MËÎ\x8daS')
+ERROR 2025-10-31 22:08:48,770 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:51,670 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 22:08:51,670 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:51,671 basehttp code 400, message Bad request version ('&\x06o')
+ERROR 2025-10-31 22:08:51,672 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:08:51,673 basehttp code 400, message Bad request version ('å\x84ÍQH]ýà\x03=÷\x92|A8´\x95\x9bf\x88ßÎ°ZÂN\x7f¡¼ä\x8ek\x00')
+INFO 2025-10-31 22:08:51,673 basehttp code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÚÚ\x00\x00\x00')
+ERROR 2025-10-31 22:08:51,674 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:08:51,674 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:09:08,282 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x9a\x9a\x00\x00\x00')
+ERROR 2025-10-31 22:09:08,285 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:09:08,285 basehttp code 400, message Bad request version ('Ó\x17s/_\x11B\x8e')
+ERROR 2025-10-31 22:09:08,286 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:09:08,286 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-10-31 22:09:08,287 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:09:08,288 basehttp code 400, message Bad request version ('\x8ek\x16\x9dü,Á\x8aHx\x11¨v&\x91U®\x06ÿN:Ìàn/\x98"\x17Þ')
+ERROR 2025-10-31 22:09:08,288 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:09:15,040 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-10-31 22:09:19,375 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:09:19,616 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+WARNING 2025-10-31 22:09:19,707 log Not Found: /static/admin/css/base.css
+WARNING 2025-10-31 22:09:19,715 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,723 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-10-31 22:09:19,726 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:19,730 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:19,731 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,739 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,741 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,754 log Not Found: /static/admin/css/responsive.css
+INFO 2025-10-31 22:09:19,755 basehttp - Broken pipe from ('127.0.0.1', 56191)
+WARNING 2025-10-31 22:09:19,756 log Not Found: /static/admin/js/theme.js
+WARNING 2025-10-31 22:09:19,758 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,775 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,778 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-10-31 22:09:19,795 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:19,801 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-10-31 22:09:19,827 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:19,828 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,848 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,853 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:19,889 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:20,269 log Not Found: /favicon.ico
+WARNING 2025-10-31 22:09:20,270 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-10-31 22:09:34,949 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+WARNING 2025-10-31 22:09:35,036 log Not Found: /static/admin/css/base.css
+WARNING 2025-10-31 22:09:35,037 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-10-31 22:09:35,038 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:35,040 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,040 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,042 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:35,051 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-10-31 22:09:35,052 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,067 log Not Found: /static/admin/js/theme.js
+WARNING 2025-10-31 22:09:35,068 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,072 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,075 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,082 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-10-31 22:09:35,084 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:35,085 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-10-31 22:09:35,088 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:35,089 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,092 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,093 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:35,100 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+INFO 2025-10-31 22:09:36,716 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+WARNING 2025-10-31 22:09:36,770 log Not Found: /static/admin/css/base.css
+WARNING 2025-10-31 22:09:36,771 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-10-31 22:09:36,772 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:36,773 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:36,774 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-10-31 22:09:36,774 log Not Found: /static/admin/js/theme.js
+WARNING 2025-10-31 22:09:36,775 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,775 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,778 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,778 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,784 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,786 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,801 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-10-31 22:09:36,803 log Not Found: /static/admin/css/login.css
+WARNING 2025-10-31 22:09:36,804 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-10-31 22:09:36,806 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-10-31 22:09:36,807 basehttp "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,807 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,807 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,808 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-10-31 22:09:36,958 log Not Found: /favicon.ico
+WARNING 2025-10-31 22:09:36,959 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-10-31 22:10:15,584 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03óqã)Þy\x03\x83\x14\x97õ\x8csÊ~}UVÜA')
+ERROR 2025-10-31 22:10:15,586 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:15,586 basehttp code 400, message Bad request version (")h\x879S\x17¡\x88\\F2ÁYúªö¨\x19¿aUý¢\x18¹\x93\x82L¹\x91\x06È\x9f'\x06\x9bø\x84z\x88\x007_¢^uÔ·/¶Ë}")
+ERROR 2025-10-31 22:10:15,591 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:15,602 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ñÛïëã}ùgÃ9ÙU"%ï¸\x87µÑµ,')
+ERROR 2025-10-31 22:10:15,603 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:15,606 basehttp code 400, message Bad request version ('\x9e\x04\'ÁA»%¸ù=ë)ªWq*\x897C9v$ùz\x07G\x81¶"{\x86Ôbq\x05*\x80\x14§')
+ERROR 2025-10-31 22:10:15,608 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:18,319 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 22:10:18,319 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:18,320 basehttp code 400, message Bad request version ("\x81[?S\x9b@\x029>Hð\x83¨Q{\x97Ðj¡á¶è\x1aWn´m\x81\x94j\x13¡\x01É`\x03ì\x9bg\x15'}ð\x91M}C\x8dv\x03\x0f³Û\x1a0åL«ñ\x9f/bX\xadÚ\x12\x05[Dç!±\x96j\x82F")
+ERROR 2025-10-31 22:10:18,322 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:18,322 basehttp code 400, message Bad request version ('Ï')
+ERROR 2025-10-31 22:10:18,323 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:18,324 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-10-31 22:10:18,330 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:20,255 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ºº\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+ERROR 2025-10-31 22:10:20,264 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:20,264 basehttp code 400, message Bad request version ('*ëRÌÚ\x80ój\x10\x1aÊkî\x80·\x17{')
+ERROR 2025-10-31 22:10:20,266 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:20,269 basehttp code 400, message Bad request version ('PéãPÐ\x96\x8c\x04¢kÏ7y\x05VßQå½\x1bõ§\x1b4½"Ë\x1a¢\x8eÏ\x94´[MPì')
+INFO 2025-10-31 22:10:20,273 basehttp code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-10-31 22:10:20,273 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:10:20,274 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:30,996 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sªª\x00\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00')
+ERROR 2025-10-31 22:10:31,002 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:31,019 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93jj\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-10-31 22:10:31,034 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:41,015 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+INFO 2025-10-31 22:10:41,016 basehttp code 400, message Bad request version ('C\x87?®\x97\x14É\x19ä3$àH£\x13WÊ2\x10°')
+ERROR 2025-10-31 22:10:41,016 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:10:41,018 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:41,032 basehttp code 400, message Bad request version ('Ûx&úLö¤Ê.A\x8a\x8b')
+ERROR 2025-10-31 22:10:41,033 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:41,036 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-10-31 22:10:41,054 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:42,099 basehttp code 400, message Bad request version ("&\x8bH\x04\x98Ø³\x1a\x86\x91\x9dÊÚ,\x7f\x1bÇÍçÇ\x17\x00'\x10$1?\x06BòE?$)hbÇTñF®öZ¦I¦¼¿æ\x0e`\\\x93>\x9a|øÊ3\x1a\x98")
+INFO 2025-10-31 22:10:42,099 basehttp code 400, message Bad request version ('\x8c\x8d¶}Òè\x9e)\x00Ð')
+ERROR 2025-10-31 22:10:42,100 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:10:42,101 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:42,104 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00\x17\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04ÀÂôwóH±-[¥iÊ\x16\x18')
+ERROR 2025-10-31 22:10:42,106 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:10:42,113 basehttp code 400, message Bad request version ('\x17')
+ERROR 2025-10-31 22:10:42,116 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:10:53,213 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 432, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\cache\backends\base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\commands\core.py", line 1741, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 2601, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+ERROR 2025-10-31 22:10:53,335 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 145
+INFO 2025-10-31 22:11:40,417 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:11:42,086 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:11:45,861 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+INFO 2025-10-31 22:11:46,025 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-31 22:11:46,031 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-31 22:11:46,079 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-10-31 22:11:46,085 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-31 22:11:46,103 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-31 22:11:46,120 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-31 22:11:46,196 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-31 22:11:51,322 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+INFO 2025-10-31 22:11:51,397 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-31 22:11:51,398 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-31 22:11:51,399 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-10-31 22:11:51,400 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-31 22:11:51,400 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-31 22:11:51,401 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-31 22:11:51,429 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-10-31 22:11:51,680 log Not Found: /favicon.ico
+WARNING 2025-10-31 22:11:51,687 basehttp "GET /favicon.ico HTTP/1.1" 404 4568
+INFO 2025-10-31 22:12:07,295 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:08,804 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:15,546 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:16,505 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:19,815 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:20,795 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:22,059 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:22,959 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:25,468 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:26,424 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:27,677 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:28,601 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:50,536 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:51,452 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:52,736 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:12:53,992 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:12:57,242 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3069
+INFO 2025-10-31 22:12:57,295 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,296 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,303 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,308 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,316 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,316 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,434 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-10-31 22:12:57,500 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+ERROR 2025-10-31 22:13:21,606 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 432, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\cache\backends\base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\commands\core.py", line 1741, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 2601, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+ERROR 2025-10-31 22:13:21,622 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 236575
+INFO 2025-10-31 22:14:13,609 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:14:18,548 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-10-31 22:14:18,548 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:18,550 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04ÀÿÊ\x7fE\x07')
+ERROR 2025-10-31 22:14:18,550 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:18,550 basehttp code 400, message Bad request version ('pý:G\x84pn\x98ÄQÚDQÎå\x00+\x00\x07\x06')
+ERROR 2025-10-31 22:14:18,551 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:18,552 basehttp code 400, message Bad request version ('\x11:ÌË')
+ERROR 2025-10-31 22:14:18,552 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:24,894 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-10-31 22:14:24,898 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:24,898 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03X6,Ü\x9c\x02°\x04æ\x9e`.#W\x06\x91ànTbö\x95\x11')
+ERROR 2025-10-31 22:14:24,899 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:24,900 basehttp code 400, message Bad request version (':\x14\x82Ä°FV\x9d')
+ERROR 2025-10-31 22:14:24,901 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:24,903 basehttp code 400, message Bad request version ('|ávà\x01[áôû\x86T¯å<\x94^_t\x10ÂÃ\x11Q®C\x91ß®V°\x00')
+ERROR 2025-10-31 22:14:24,904 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,969 basehttp code 400, message Bad request version ('È')
+ERROR 2025-10-31 22:14:28,969 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,971 basehttp code 400, message Bad request version ('z\x00')
+ERROR 2025-10-31 22:14:28,972 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,987 basehttp code 400, message Bad request version ('\x17&×Ì^X\x8f?')
+ERROR 2025-10-31 22:14:28,988 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,988 basehttp code 400, message Bad request version ('\x19\x07ý:Q7')
+ERROR 2025-10-31 22:14:28,990 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,991 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-10-31 22:14:28,991 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:28,991 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03fM+ä')
+ERROR 2025-10-31 22:14:28,992 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:34,932 basehttp code 400, message Bad request version ('\x81\x16UuÚ<ö\x19§í@Ëºy$I\x7f\x064Ù²\x84Ð\x89ò\x18u&ÿ~O`AK55B=e&\x94]-\x16ÜòÕ÷±@¨È¨')
+ERROR 2025-10-31 22:14:34,932 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:34,933 basehttp code 400, message Bad request version ('Á?°\x80s§\x87<Ê\x0e¸+VÞÍ´dàÒÒ\x8d')
+ERROR 2025-10-31 22:14:34,934 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:45,428 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:14:46,913 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:14:49,587 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:14:51,257 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:14:52,226 basehttp code 400, message Bad request version ('o1Kùãnßj\x01î\x05JD\x06«ì`XàF\x93DWf*gV')
+ERROR 2025-10-31 22:14:52,227 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:52,228 basehttp code 400, message Bad request version ('âªÎ\x80b%SxN¯\x11¶ëÓÈÕ\x89\x07ä\x19$ÏaB\x07\x16·úä&!¡\x9b')
+ERROR 2025-10-31 22:14:52,229 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:52,234 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x9a\x9a\x00\x00\x00')
+ERROR 2025-10-31 22:14:52,235 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:52,235 basehttp code 400, message Bad request version ('·Ä§y±\x19)N£\\')
+ERROR 2025-10-31 22:14:52,238 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:52,488 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-10-31 22:14:52,491 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:52,503 basehttp code 400, message Bad request version ('lw\x11Êûø1I8\x04\x15\x8cU\x0eãÃgµj\x8d³\x82z±ÆÆæ\x83ÏÚ·wæ-rÀ\x9dDÛGk')
+ERROR 2025-10-31 22:14:52,505 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:53,738 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 22:14:53,738 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:53,740 basehttp code 400, message Bad request version ('iIÎÕÄ"*\x8cxÚ')
+ERROR 2025-10-31 22:14:53,740 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:53,806 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+INFO 2025-10-31 22:14:53,808 basehttp code 400, message Bad request version ('\x10°\x94\x8b]9Û\x80ÿ\x1b\x13,4')
+ERROR 2025-10-31 22:14:53,808 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:14:53,809 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:53,811 basehttp code 400, message Bad request version ('\x18ÃÒVj\x8fëÌ\x05&\x80I\x13\x9eiÃR\x8c')
+ERROR 2025-10-31 22:14:53,812 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:53,821 basehttp code 400, message Bad request version ("¨¦yÊ\x9b\x87'\x9c^ö\x9b\x90¨õ«ýL\x08KwQa[ÌÜÀ_ë4\x93¡ó\x01")
+ERROR 2025-10-31 22:14:53,838 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:55,840 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00')
+ERROR 2025-10-31 22:14:55,842 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:55,842 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00')
+ERROR 2025-10-31 22:14:55,842 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:55,843 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93JJ\x00\x00\x003\x04ï\x04í')
+ERROR 2025-10-31 22:14:55,844 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:55,844 basehttp code 400, message Bad request version ('Fq\x89\x81\x96-¥@Üa-nBÉéà£9ç2T\x9a\x07DW')
+ERROR 2025-10-31 22:14:55,845 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:58,717 basehttp code 400, message Bad request version ('¦Ò\x12\x07«Xlu-87nx¤¾mH\x9d¾\x91')
+ERROR 2025-10-31 22:14:58,718 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:58,720 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-10-31 22:14:58,721 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:58,721 basehttp code 400, message Bad request syntax ("\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03§^\x98\x9b\x08Ûûp°\x88M'U*¶å\x99#\x8fª´9\x91|þÔ\x05pºù>\x1c ")
+ERROR 2025-10-31 22:14:58,722 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:58,722 basehttp code 400, message Bad request version ('(½\x0f\x1bo¥Re\x95D')
+ERROR 2025-10-31 22:14:58,723 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:59,434 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÚÚ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À\x03`]¾ê\x0e\x07E\xad²\x18mdÅ¿\x1a\x9b\x89u±A\x99{\x9b2\x9c\x81×\x80v°)\x9dl$«´ø¶')
+ERROR 2025-10-31 22:14:59,435 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:59,435 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+INFO 2025-10-31 22:14:59,437 basehttp code 400, message Bad request version ('¤\x1ax\x05§\xadeò8õº\x88\x06H2')
+ERROR 2025-10-31 22:14:59,437 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:14:59,438 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:14:59,441 basehttp code 400, message Bad request version ('æøpb\x1bm')
+ERROR 2025-10-31 22:14:59,442 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,125 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x060\x9c`^Ê¥\x97GÒ¼[á\x84¼\x00áÓKâßÊ«%7\x9a7\x16\\|\x88~')
+INFO 2025-10-31 22:15:00,125 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 22:15:00,126 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:15:00,128 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,138 basehttp code 400, message Bad request version ('æCï')
+ERROR 2025-10-31 22:15:00,138 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,139 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 22:15:00,141 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,888 basehttp code 400, message Bad request version ('ÆDxÊI\x1b)ÈòÊñì\x93ð\x9fJ¦\x16MÜÉ;\x98\x08\x98H"ÍÍ\x84¹jµ£àÿ÷15\x16_§Ò\x8d\x9dH\x15O·mn/7ï÷ù\x95²Á')
+ERROR 2025-10-31 22:15:00,889 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,889 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03èw\x94\x00¤õ@\x97Áú\x80ÅuÇÒKí\x95\x06\x7f\x8c\x83z\x9a$\x97@\x9c²|»"')
+ERROR 2025-10-31 22:15:00,891 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,891 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-10-31 22:15:00,898 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:00,900 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-10-31 22:15:00,900 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:01,452 basehttp code 400, message Bad request version (';62»å\x175¹ÒJkpSÇ\x98')
+INFO 2025-10-31 22:15:01,453 basehttp code 400, message Bad request version ('ðqàâ£Ü\x01\x1a*\x04À\x98\x97èS\x93\x94\x9f¸\x9eñr¦(\x00\x90¡z\x8c\x9béÁÿ\x08nï>\x18Y(kF|\x9f_ÐH\x94\x92aà')
+ERROR 2025-10-31 22:15:01,454 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:15:01,454 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:01,456 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00')
+ERROR 2025-10-31 22:15:01,457 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:01,457 basehttp code 400, message Bad request version ('\x97_ºtd\x8d\x046Jf\x00')
+ERROR 2025-10-31 22:15:01,459 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:20,117 basehttp code 400, message Bad request version ('K\x87Ê\x12\x15(\x9aÆ%,\x16VÝ\x98Od;Qh\x1azK\x13\x15\x9b{´>Ø&üØwÖ\x148ÌWÅ¾úY¹Ù\x0eÈò\\ú\x9b\x049»\x8by\x95')
+INFO 2025-10-31 22:15:20,118 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 22:15:20,118 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:15:20,119 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:20,120 basehttp code 400, message Bad request version ('\x03/ü')
+ERROR 2025-10-31 22:15:20,121 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:20,121 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03TÎqúµìp')
+ERROR 2025-10-31 22:15:20,122 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:46,383 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:15:53,246 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-10-31 22:15:53,248 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:53,248 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00')
+ERROR 2025-10-31 22:15:53,249 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:53,249 basehttp code 400, message Bad request version ('ÙbÃæ3éÓ[\x16h\x991S\x98ßjv\x90*\x16c\x16D·3\x94Â*W$c')
+ERROR 2025-10-31 22:15:53,250 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:15:53,251 basehttp code 400, message Bad request version ('å\x11¡ª\x9ex`°ï\x07é\xad\x10¶½Î9[}\x15>±ÀK.ï~(Äx½')
+ERROR 2025-10-31 22:15:53,251 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:16:00,060 basehttp code 400, message Bad request version ('ÚÓX\x91¶\x998J¤hú\x9ff\x9c\x18©')
+ERROR 2025-10-31 22:16:00,061 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:16:00,062 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-10-31 22:16:00,062 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:18:59,475 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:19:33,680 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-31 22:19:37,449 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:19:37,452 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-10-31 22:19:37,554 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:19:37,556 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2025-10-31 22:19:47,759 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:19:49,140 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-31 22:19:50,248 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:19:50,252 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:19:50,528 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:19:50,531 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+INFO 2025-10-31 22:20:17,281 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:20:18,760 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:20:20,950 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:21:23,531 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-31 22:21:29,569 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:21:29,572 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:21:29,766 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:21:29,769 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+INFO 2025-10-31 22:21:42,149 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-10-31 22:21:42,149 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:42,151 basehttp code 400, message Bad request version ('©¯Æ°2NMÒ')
+ERROR 2025-10-31 22:21:42,151 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:42,161 basehttp code 400, message Bad request version ('¾\x9a')
+ERROR 2025-10-31 22:21:42,162 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:42,163 basehttp code 400, message Bad request version ('ë¥E¯\x95SdÊN')
+ERROR 2025-10-31 22:21:42,163 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:42,166 basehttp code 400, message Bad request version ('÷\x038¦\x02ÊVFû%÷z±Ñ\x07\x06·\x80Lk')
+ERROR 2025-10-31 22:21:42,167 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:42,200 basehttp code 400, message Bad request version ('\x99@¶\x07Î\x0e`\x0e°8\x00çà£½\x92ì\x91\x00')
+ERROR 2025-10-31 22:21:42,206 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:44,977 basehttp code 400, message Bad request version ('Ü\x8aäëÈ3£èþ\x116`ÍPºm©Âï×q×¼YÃ+-uïÅ\x00')
+ERROR 2025-10-31 22:21:44,978 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:44,979 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06súú\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+INFO 2025-10-31 22:21:44,980 basehttp code 400, message Bad request version ('öýÔ"`m\x90ã¬½')
+ERROR 2025-10-31 22:21:44,980 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:21:44,981 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:44,982 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063JJ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-10-31 22:21:44,982 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:49,999 basehttp code 400, message Bad request version ('\x00°')
+ERROR 2025-10-31 22:21:50,000 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:50,000 basehttp code 400, message Bad request version ('Ü\x14}x\x1a')
+ERROR 2025-10-31 22:21:50,001 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:50,002 basehttp code 400, message Bad request version ('£c\x16Òq\x03ÖI\x98k\x17²êô\x93\x13¿E\x00cs"Ê')
+ERROR 2025-10-31 22:21:50,003 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-10-31 22:21:50,003 basehttp code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-10-31 22:21:50,004 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-10-31 22:22:15,106 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:15,108 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:22:15,353 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:15,356 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+ERROR 2025-10-31 22:22:17,266 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:17,268 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:22:17,450 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:17,451 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+ERROR 2025-10-31 22:22:52,473 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:52,475 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:22:52,631 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:52,632 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+ERROR 2025-10-31 22:22:54,385 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:54,387 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:22:54,571 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:22:54,573 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+ERROR 2025-10-31 22:23:05,316 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:05,318 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:23:05,465 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:05,466 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+ERROR 2025-10-31 22:23:07,958 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:07,959 basehttp "GET / HTTP/1.1" 400 82929
+ERROR 2025-10-31 22:23:08,141 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:08,143 basehttp "GET /favicon.ico HTTP/1.1" 400 82850
+INFO 2025-10-31 22:23:17,960 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:23:19,414 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-31 22:23:21,762 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:21,765 basehttp "GET / HTTP/1.1" 400 82957
+ERROR 2025-10-31 22:23:21,942 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:21,944 basehttp "GET /favicon.ico HTTP/1.1" 400 82878
+ERROR 2025-10-31 22:23:23,472 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:23,474 basehttp "GET / HTTP/1.1" 400 82957
+ERROR 2025-10-31 22:23:23,614 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:23,616 basehttp "GET /favicon.ico HTTP/1.1" 400 82878
+ERROR 2025-10-31 22:23:25,090 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:25,092 basehttp "GET / HTTP/1.1" 400 82957
+ERROR 2025-10-31 22:23:25,249 log Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.235.65:8000'. You may need to add '192.168.235.65' to ALLOWED_HOSTS.
+WARNING 2025-10-31 22:23:25,250 basehttp "GET /favicon.ico HTTP/1.1" 400 82878
+INFO 2025-10-31 22:23:35,923 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:23:37,449 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:23:41,116 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:23:42,513 autoreload Watching for file changes with StatReloader
+WARNING 2025-10-31 22:23:45,335 log Not Found: /
+WARNING 2025-10-31 22:23:45,336 basehttp "GET / HTTP/1.1" 404 4522
+WARNING 2025-10-31 22:23:45,399 log Not Found: /favicon.ico
+WARNING 2025-10-31 22:23:45,399 basehttp "GET /favicon.ico HTTP/1.1" 404 4573
+INFO 2025-10-31 22:23:53,447 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:23:54,834 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:24:16,125 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:24:19,266 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-10-31 22:24:19,386 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:24:19,420 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3069
+INFO 2025-10-31 22:24:19,549 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-31 22:24:19,574 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-10-31 22:24:19,575 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-10-31 22:24:19,617 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-10-31 22:24:19,655 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-10-31 22:24:19,664 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-10-31 22:24:19,837 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-10-31 22:24:20,103 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+ERROR 2025-10-31 22:24:37,636 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 432, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\cache\backends\base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\commands\core.py", line 1741, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 2601, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+ERROR 2025-10-31 22:24:37,655 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 235072
+ERROR 2025-10-31 22:24:42,679 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 432, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\cache\backends\base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django_redis\client\default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\commands\core.py", line 1741, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 2601, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\redis\connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+ERROR 2025-10-31 22:24:42,686 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 235072
+INFO 2025-10-31 22:28:26,950 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:28:28,470 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:28:30,814 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:28:32,447 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:28:38,170 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:28:38,485 basehttp "GET /admin/ HTTP/1.1" 200 90727
+INFO 2025-10-31 22:28:38,620 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:28:38,717 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-10-31 22:28:38,754 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-10-31 22:30:15,222 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:30:16,723 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:30:24,230 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:30:25,642 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:30:27,742 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 22:30:29,139 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:30:37,247 basehttp "GET /admin/admin_dashboard_app/adminactionlog/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:30:37,287 basehttp "GET /admin/login/?next=/admin/admin_dashboard_app/adminactionlog/ HTTP/1.1" 200 3104
+INFO 2025-10-31 22:31:01,596 basehttp "POST /admin/login/?next=/admin/admin_dashboard_app/adminactionlog/ HTTP/1.1" 302 0
+ERROR 2025-10-31 22:31:01,769 log Internal Server Error: /admin/admin_dashboard_app/adminactionlog/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: admin_action_log
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: admin_action_log
+ERROR 2025-10-31 22:31:01,791 basehttp "GET /admin/admin_dashboard_app/adminactionlog/ HTTP/1.1" 500 209114
+INFO 2025-10-31 22:31:10,969 basehttp "GET /admin/login/?next=/admin/admin_dashboard_app/adminactionlog/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:31:11,086 basehttp "GET /admin/ HTTP/1.1" 200 90743
+INFO 2025-10-31 22:31:15,529 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 45562
+INFO 2025-10-31 22:31:15,694 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-31 22:31:15,710 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-10-31 22:31:15,711 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-31 22:31:15,713 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-31 22:31:15,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-31 22:31:15,721 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-31 22:31:15,772 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:31:15,797 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-31 22:31:15,800 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-31 22:31:15,833 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-10-31 22:31:15,837 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-10-31 22:31:15,958 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-31 22:31:16,011 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-10-31 22:31:16,081 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-10-31 22:31:55,163 basehttp "GET /admin/ HTTP/1.1" 200 90743
+INFO 2025-10-31 22:35:08,317 autoreload D:\code\copy - fix\backend\rides\admin.py changed, reloading.
+INFO 2025-10-31 22:35:11,168 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:35:17,330 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:35:17,399 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3069
+INFO 2025-10-31 22:35:17,452 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:35:29,598 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:35:31,342 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:35:31,513 basehttp "GET /admin/ HTTP/1.1" 200 99386
+INFO 2025-10-31 22:36:20,229 autoreload D:\code\copy - fix\backend\locations\admin.py changed, reloading.
+INFO 2025-10-31 22:36:22,717 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 22:36:25,131 basehttp "GET /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:36:25,196 basehttp "GET /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 200 3083
+INFO 2025-10-31 22:36:32,207 basehttp "POST /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-10-31 22:36:32,405 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 49133
+INFO 2025-10-31 22:36:32,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-31 22:36:32,527 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,527 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,532 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,532 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,533 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,534 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,576 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,588 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:32,590 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-10-31 22:36:36,028 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 71799
+INFO 2025-10-31 22:36:36,095 basehttp "GET /admin/ HTTP/1.1" 200 102618
+INFO 2025-10-31 22:37:04,573 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:37:17,388 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:37:23,996 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:37:29,412 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:37:34,766 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:38:08,570 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+INFO 2025-10-31 22:38:14,601 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+ERROR 2025-10-31 22:38:26,762 log Internal Server Error: /admin/chat/message/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: chat_message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: chat_message
+ERROR 2025-10-31 22:38:26,776 basehttp "GET /admin/chat/message/ HTTP/1.1" 500 208682
+ERROR 2025-10-31 22:38:36,329 log Internal Server Error: /admin/chat/message/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: chat_message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: chat_message
+ERROR 2025-10-31 22:38:36,391 basehttp "GET /admin/chat/message/ HTTP/1.1" 500 208819
+INFO 2025-10-31 22:38:40,163 basehttp "GET /admin/ HTTP/1.1" 200 102618
+INFO 2025-10-31 22:38:41,852 basehttp "GET /admin/ HTTP/1.1" 200 102618
+INFO 2025-10-31 22:38:41,898 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-31 22:38:42,954 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 49117
+INFO 2025-10-31 22:38:43,000 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-31 22:38:49,159 basehttp "GET /admin/ HTTP/1.1" 200 102618
+INFO 2025-10-31 22:38:50,337 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 41791
+INFO 2025-10-31 22:38:50,419 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
