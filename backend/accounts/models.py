@@ -2,50 +2,58 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.core.validators import RegexValidator
 import os
+import uuid
 from django.utils.text import slugify
+
+
+from common_utils import normalize_phone_number
+
 
 
 def user_profile_picture_path(instance, filename):
     """
     Generate file path for user profile pictures.
-    Format: profile_pictures/user_{id}/{filename}
+    Format: profile_pictures/{uuid}/{filename}
+    Using UUID instead of user.id to avoid None for unsaved users
     """
     ext = os.path.splitext(filename)[1]
-    filename = f"{slugify(instance.phone_number)}{ext}"
-    return os.path.join('profile_pictures', f'user_{instance.id}', filename)
+    unique_filename = f"{uuid.uuid4().hex}{ext}"
+    return os.path.join('profile_pictures', unique_filename)
 
 
 class UserManager(BaseUserManager):
     """Custom user manager for phone number authentication."""
-    
+        # Then in UserManager:
     def normalize_phone_number(self, phone_number):
-        """
-        Normalize phone number to international format.
-        Converts '08167791934' to '+2348167791934'
-        """
-        if not phone_number:
-            return phone_number
+        from common_utils import normalize_phone_number
+        return normalize_phone_number(phone_number)    
+    
+    
+    # def normalize_phone_number(self, phone_number):
+    #     """
+    #     Normalize phone number to international format.
+    #     Converts '08167791934' to '+2348167791934'
+    #     """
+    #     if not phone_number:
+    #         return phone_number
         
-        # Remove any spaces, dashes, or parentheses
-        phone_number = ''.join(filter(str.isdigit, phone_number.replace('+', '')))
+    #     # Remove any spaces, dashes, or parentheses
+    #     phone_number = ''.join(filter(str.isdigit, phone_number.replace('+', '')))
         
-        # If starts with 0 and has 11 digits (Nigerian format), convert to +234
-        if phone_number.startswith('0') and len(phone_number) == 11:
-            phone_number = '+234' + phone_number[1:]
-        # If doesn't start with +, assume it needs +234
-        elif not phone_number.startswith('+'):
-            # If it's 10 digits, add +234
-            if len(phone_number) == 10:
-                phone_number = '+234' + phone_number
-            # If it's 13 digits starting with 234, add +
-            elif len(phone_number) == 13 and phone_number.startswith('234'):
-                phone_number = '+' + phone_number
-            else:
-                phone_number = '+' + phone_number
-        else:
-            phone_number = '+' + phone_number
+    #     # If starts with 0 and has 11 digits (Nigerian format), convert to +234
+    #     if phone_number.startswith('0') and len(phone_number) == 11:
+    #         phone_number = '+234' + phone_number[1:]
+    #     # If doesn't start with + and is 10 digits, add +234
+    #     elif len(phone_number) == 10:
+    #         phone_number = '+234' + phone_number
+    #     # If it's 13 digits starting with 234, add +
+    #     elif len(phone_number) == 13 and phone_number.startswith('234'):
+    #         phone_number = '+' + phone_number
+    #     # If already has digits but no +, add it
+    #     elif not phone_number.startswith('+'):
+    #         phone_number = '+' + phone_number
         
-        return phone_number
+    #     return phone_number
     
     def create_user(self, phone_number, password=None, **extra_fields):
         """Create and return a regular user with a phone number."""
@@ -84,6 +92,8 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
+    """Custom user model using phone number as username."""
+    
     phone_regex = RegexValidator(
         regex=r'^\+?1?\d{9,15}$',
         message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."
@@ -104,7 +114,10 @@ class User(AbstractUser):
         null=True,
         help_text="User's profile picture"
     )
-    is_driver = models.BooleanField(default=False)
+    is_driver = models.BooleanField(
+        default=False,
+        help_text="Whether this user is registered as a driver"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -116,6 +129,12 @@ class User(AbstractUser):
     # Assign the custom manager
     objects = UserManager()
     
+    class Meta:
+        db_table = 'accounts_user'
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'
+        ordering = ['-created_at']
+    
     def save(self, *args, **kwargs):
         """Override save to normalize phone number before saving."""
         if self.phone_number:
@@ -123,24 +142,45 @@ class User(AbstractUser):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.phone_number}"
+        return f"{self.get_full_name()} - {self.phone_number}"
+    
+    def get_full_name(self):
+        """Return the user's full name."""
+        return f"{self.first_name} {self.last_name}".strip() or self.phone_number
 
 
 class OTPVerification(models.Model):
-    phone_number = models.CharField(max_length=17)
+    """Store OTP verification codes for phone number authentication."""
+    
+    phone_number = models.CharField(max_length=17, db_index=True)
     otp_code = models.CharField(max_length=6)
     is_verified = models.BooleanField(default=False)
+    attempts = models.IntegerField(default=0, help_text="Number of verification attempts")
     created_at = models.DateTimeField(auto_now_add=True)
     expires_at = models.DateTimeField()
 
     class Meta:
+        db_table = 'accounts_otp_verification'
         ordering = ['-created_at']
+        indexes = [
+            models.Index(fields=['phone_number', 'is_verified', 'expires_at']),
+        ]
     
     def save(self, *args, **kwargs):
         """Normalize phone number before saving."""
         if self.phone_number:
             self.phone_number = User.objects.normalize_phone_number(self.phone_number)
         super().save(*args, **kwargs)
+    
+    def is_expired(self):
+        """Check if OTP has expired."""
+        from django.utils import timezone
+        return timezone.now() > self.expires_at
+    
+    def increment_attempts(self):
+        """Increment verification attempts counter."""
+        self.attempts += 1
+        self.save(update_fields=['attempts'])
 
     def __str__(self):
-        return f"OTP for {self.phone_number}"
+        return f"OTP for {self.phone_number} - {'Verified' if self.is_verified else 'Pending'}"

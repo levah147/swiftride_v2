@@ -1,0 +1,146 @@
+INFO 2025-10-29 21:07:27,714 autoreload Watching for file changes with StatReloader
+WARNING 2025-10-29 21:08:17,705 log Not Found: /api/signals/signals/active/
+WARNING 2025-10-29 21:08:17,706 basehttp "GET /api/signals/signals/active/ HTTP/1.1" 404 3516
+INFO 2025-10-29 21:08:42,615 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-29 21:08:42,783 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3069
+INFO 2025-10-29 21:08:53,714 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-29 21:08:53,924 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-29 21:09:14,186 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 33985
+INFO 2025-10-29 21:09:14,304 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-10-29 21:09:14,380 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-29 21:09:22,971 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-29 21:09:27,455 basehttp "GET /admin/pricing/city/ HTTP/1.1" 200 25252
+INFO 2025-10-29 21:09:27,524 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-29 21:09:28,813 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-29 21:09:31,200 basehttp "GET /admin/pricing/fuelpriceadjustment/ HTTP/1.1" 200 24926
+INFO 2025-10-29 21:09:31,268 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-29 21:09:32,247 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-29 21:09:37,617 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 26659
+INFO 2025-10-29 21:09:37,699 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-29 21:09:47,044 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-30 10:53:39,044 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 10:55:16,402 autoreload Watching for file changes with StatReloader
+WARNING 2025-10-30 10:55:42,898 log Not Found: /
+WARNING 2025-10-30 10:55:42,910 basehttp "GET / HTTP/1.1" 404 3417
+WARNING 2025-10-30 10:55:43,523 log Not Found: /favicon.ico
+WARNING 2025-10-30 10:55:43,524 basehttp "GET /favicon.ico HTTP/1.1" 404 3468
+INFO 2025-10-30 10:55:49,718 basehttp "GET /admin/ HTTP/1.1" 200 53360
+INFO 2025-10-30 10:55:49,872 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:49,873 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:49,907 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:49,943 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:49,960 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:50,074 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:50,228 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:50,756 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-10-30 10:55:50,636 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2025-10-30 10:58:54,013 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+WARNING 2025-10-30 10:58:54,197 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 10:58:54,197 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+WARNING 2025-10-30 10:59:18,233 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 10:59:18,234 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+WARNING 2025-10-30 10:59:39,557 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 10:59:39,558 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+WARNING 2025-10-30 10:59:46,052 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 10:59:46,053 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+INFO 2025-10-30 11:00:12,195 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 33985
+INFO 2025-10-30 11:00:12,320 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-10-30 11:00:12,340 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-10-30 11:00:12,346 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-10-30 11:00:12,409 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-30 11:00:16,991 basehttp "GET /admin/accounts/ HTTP/1.1" 200 23837
+INFO 2025-10-30 11:00:18,546 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 26659
+INFO 2025-10-30 11:00:18,596 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-10-30 11:00:36,920 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 11:00:36,920 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+INFO 2025-10-30 11:00:59,312 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 33985
+INFO 2025-10-30 11:00:59,375 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-30 14:58:39,588 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:12:38,004 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:12:40,412 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:12:43,576 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:12:45,027 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:12:49,238 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:12:50,921 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:12:56,995 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:12:58,774 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:13:01,387 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:13:03,799 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:13:07,152 autoreload D:\code\copy - fix\backend\pricing\views.py changed, reloading.
+INFO 2025-10-30 15:13:08,910 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:13:44,553 autoreload D:\code\copy - fix\backend\drivers\views.py changed, reloading.
+INFO 2025-10-30 15:13:47,138 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:13:52,749 autoreload D:\code\copy - fix\backend\drivers\views.py changed, reloading.
+INFO 2025-10-30 15:13:54,132 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:14:10,108 autoreload D:\code\copy - fix\backend\payments\views.py changed, reloading.
+INFO 2025-10-30 15:14:11,907 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:14:16,176 autoreload D:\code\copy - fix\backend\payments\views.py changed, reloading.
+INFO 2025-10-30 15:14:17,983 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:14:20,225 autoreload D:\code\copy - fix\backend\payments\views.py changed, reloading.
+INFO 2025-10-30 15:14:22,854 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:14:40,296 autoreload D:\code\copy - fix\backend\rides\views.py changed, reloading.
+INFO 2025-10-30 15:14:41,874 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 15:14:48,547 autoreload D:\code\copy - fix\backend\rides\views.py changed, reloading.
+INFO 2025-10-30 15:14:50,288 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:38:16,655 autoreload D:\code\copy - fix\backend\payments\models.py changed, reloading.
+INFO 2025-10-30 16:38:20,000 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:42:08,431 autoreload D:\code\copy - fix\backend\payments\admin.py changed, reloading.
+INFO 2025-10-30 16:42:10,276 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:42:13,043 autoreload D:\code\copy - fix\backend\payments\admin.py changed, reloading.
+INFO 2025-10-30 16:42:14,301 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:43:21,960 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:43:23,583 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:43:30,366 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:43:31,685 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:43:33,525 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:43:34,988 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:43:42,314 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:43:44,238 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:44:25,695 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:44:27,041 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:44:36,311 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:44:37,689 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:44:44,886 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:44:46,229 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:44:53,351 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-10-30 16:44:54,754 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:46:06,356 autoreload D:\code\copy - fix\backend\rides\serializers.py changed, reloading.
+INFO 2025-10-30 16:46:07,701 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:46:55,429 autoreload D:\code\copy - fix\backend\rides\serializers.py changed, reloading.
+INFO 2025-10-30 16:46:57,303 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:49:11,108 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 16:58:57,569 basehttp "OPTIONS /api/auth/send-otp/ HTTP/1.1" 200 0
+WARNING 2025-10-30 16:58:57,870 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 16:58:57,870 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+WARNING 2025-10-30 16:59:23,583 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 16:59:23,584 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+WARNING 2025-10-30 16:59:40,965 log Not Found: /api/auth/send-otp/
+WARNING 2025-10-30 16:59:40,966 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 404 3495
+INFO 2025-10-30 23:43:52,957 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 23:44:29,814 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-30 23:44:31,509 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 23:46:53,799 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 23:47:37,954 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-30 23:47:38,949 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 23:47:43,269 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-30 23:47:44,687 autoreload Watching for file changes with StatReloader
+INFO 2025-10-30 23:48:05,502 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-30 23:48:06,528 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:16:33,201 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:19:00,280 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:19:10,801 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:21:09,097 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:21:39,104 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 01:21:40,394 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:22:05,517 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:02,316 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:13,933 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 01:24:15,153 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:21,913 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 01:24:22,989 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:30,393 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 01:24:31,344 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:32,608 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-10-31 01:24:33,622 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:24:43,906 autoreload Watching for file changes with StatReloader
+INFO 2025-10-31 01:26:27,582 autoreload Watching for file changes with StatReloader

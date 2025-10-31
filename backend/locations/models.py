@@ -40,3 +40,55 @@ class RecentLocation(models.Model):
     
     def __str__(self):
         return f"{self.user.phone_number} - {self.address}"
+
+
+
+
+class DriverLocation(models.Model):
+    """Real-time driver location tracking"""
+    
+    driver = models.OneToOneField(
+        'drivers.Driver',
+        on_delete=models.CASCADE,
+        related_name='current_location'
+    )
+    latitude = models.DecimalField(max_digits=10, decimal_places=8)
+    longitude = models.DecimalField(max_digits=11, decimal_places=8)
+    bearing = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    speed_kmh = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    accuracy_meters = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    last_updated = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = 'locations_driver_location'
+        indexes = [
+            models.Index(fields=['latitude', 'longitude']),
+            models.Index(fields=['last_updated']),
+        ]
+    
+    def __str__(self):
+        return f"{self.driver.user.get_full_name()} - Last updated: {self.last_updated}"
+
+
+# MOVE RideTracking from rides app to here
+class RideTracking(models.Model):
+    """GPS tracking during active rides"""
+    
+    ride = models.ForeignKey(
+        'rides.Ride',
+        on_delete=models.CASCADE,
+        related_name='tracking_points'
+    )
+    latitude = models.DecimalField(max_digits=10, decimal_places=8)
+    longitude = models.DecimalField(max_digits=11, decimal_places=8)
+    speed_kmh = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    bearing = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    accuracy_meters = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        db_table = 'locations_ride_tracking'
+        ordering = ['timestamp']
+        indexes = [
+            models.Index(fields=['ride', 'timestamp']),
+        ]

@@ -9,6 +9,7 @@ urlpatterns = [
     path('profile/', views.DriverProfileView.as_view(), name='driver_profile'),
     path('status/', views.DriverStatusView.as_view(), name='driver_status'),
     path('documents-status/', views.get_driver_documents_status, name='driver_documents_status'),
+    path('toggle-availability/', views.toggle_driver_availability, name='toggle_availability'),
     
     # Document & Image Upload
     path('upload-document/', views.UploadVerificationDocumentView.as_view(), name='upload_document'),
@@ -19,4 +20,5 @@ urlpatterns = [
     path('admin/approve/<int:pk>/', views.AdminApproveDriverView.as_view(), name='admin_approve_driver'),
     path('admin/reject/<int:pk>/', views.AdminRejectDriverView.as_view(), name='admin_reject_driver'),
     path('admin/verify-document/<int:pk>/', views.AdminVerifyDocumentView.as_view(), name='admin_verify_document'),
+    path('admin/background-check/<int:pk>/', views.admin_run_background_check, name='admin_background_check'),
 ]
