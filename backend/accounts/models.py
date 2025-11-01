@@ -28,33 +28,6 @@ class UserManager(BaseUserManager):
         from common_utils import normalize_phone_number
         return normalize_phone_number(phone_number)    
     
-    
-    # def normalize_phone_number(self, phone_number):
-    #     """
-    #     Normalize phone number to international format.
-    #     Converts '08167791934' to '+2348167791934'
-    #     """
-    #     if not phone_number:
-    #         return phone_number
-        
-    #     # Remove any spaces, dashes, or parentheses
-    #     phone_number = ''.join(filter(str.isdigit, phone_number.replace('+', '')))
-        
-    #     # If starts with 0 and has 11 digits (Nigerian format), convert to +234
-    #     if phone_number.startswith('0') and len(phone_number) == 11:
-    #         phone_number = '+234' + phone_number[1:]
-    #     # If doesn't start with + and is 10 digits, add +234
-    #     elif len(phone_number) == 10:
-    #         phone_number = '+234' + phone_number
-    #     # If it's 13 digits starting with 234, add +
-    #     elif len(phone_number) == 13 and phone_number.startswith('234'):
-    #         phone_number = '+' + phone_number
-    #     # If already has digits but no +, add it
-    #     elif not phone_number.startswith('+'):
-    #         phone_number = '+' + phone_number
-        
-    #     return phone_number
-    
     def create_user(self, phone_number, password=None, **extra_fields):
         """Create and return a regular user with a phone number."""
         if not phone_number:

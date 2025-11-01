@@ -21,6 +21,8 @@ class SavedLocation(models.Model):
     
     class Meta:
         unique_together = ['user', 'location_type']
+        ordering = ['-updated_at']
+
     
     def __str__(self):
         return f"{self.user.phone_number} - {self.location_type}: {self.address}"

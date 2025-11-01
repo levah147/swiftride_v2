@@ -1,7 +1,7 @@
 """
 FILE LOCATION: swiftride/settings.py
 
-Complete Django settings for SwiftRide production.
+✅ FIXED VERSION - Complete Django settings for SwiftRide
 """
 import os
 from pathlib import Path
@@ -14,9 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'False'
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS',  '192.168.235.65,localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '192.168.235.65,localhost,127.0.0.1').split(',')
 
 # Application definition
 INSTALLED_APPS = [
@@ -28,9 +28,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django.contrib.gis',  # For location features
+    # 'django.contrib.gis',  # For location features (uncomment if using PostGIS)
     
     # Third-party apps
+    'rest_framework_simplejwt.token_blacklist',
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
@@ -39,24 +40,22 @@ INSTALLED_APPS = [
     'drf_yasg',  # API documentation
     'sslserver',
     
-    # SwiftRide apps
-    'accounts',
-    'drivers',
-    
-    'vehicles',
-    'pricing',
-    'locations',
-    'rides',
-    'payments', 
-    'notifications',
-     
-    'chat',
-    'support',
-    'analytics',
-    'admin_dashboard_app',
-    'safety', 
-    'promotions',
-]
+    # SwiftRide apps (in dependency order)
+    'accounts',          # 1. Core - User model (foundation)
+    'drivers',           # 2. Depends on: accounts
+    'vehicles',          # 3. Depends on: drivers
+    'pricing',           # 4. Independent
+    'locations',         # 5. Independent
+    'rides',             # 6. Depends on: accounts, drivers, vehicles, pricing, locations
+    'payments',          # 7. Depends on: rides, accounts
+    'notifications',     # 8. Supports all apps
+    'chat',              # 9. Depends on: accounts
+    'support',           # 10. Depends on: accounts
+    'analytics',         # 11. Depends on: rides, drivers, payments
+    'promotions',        # 12. Depends on: accounts, rides
+    'safety',            # 13. Depends on: accounts, rides
+    'admin_dashboard',   # 14. Depends on: all apps ⚠️ FIXED: was 'admin_dashboard_app'
+]  
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -90,7 +89,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'swiftride.wsgi.application'
 ASGI_APPLICATION = 'swiftride.asgi.application'
 
-# Database
+# ========================================
+# DATABASE
+# ========================================
+# Development: SQLite
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -98,9 +100,10 @@ DATABASES = {
     }
 }
 
+# Production: PostgreSQL (uncomment and configure)
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',  # or django.db.backends.postgresql
 #         'NAME': os.getenv('DB_NAME', 'swiftride_db'),
 #         'USER': os.getenv('DB_USER', 'swiftride_user'),
 #         'PASSWORD': os.getenv('DB_PASSWORD', 'your_password'),
@@ -139,7 +142,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 # STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Media files
@@ -169,7 +172,6 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
     ],
-    'EXCEPTION_HANDLER': 'swiftride.utils.custom_exception_handler',
     'DATETIME_FORMAT': '%Y-%m-%dT%H:%M:%S%z',
 }
 
@@ -238,7 +240,36 @@ CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60  # 30 minutes
 
 # ========================================
-# FIREBASE CLOUD MESSAGING (Push Notifications)
+# CACHE
+# ========================================
+# Development: Local memory cache
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
+}
+
+# Production: Redis cache (uncomment)
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django_redis.cache.RedisCache',
+#         'LOCATION': os.getenv('REDIS_URL', 'redis://localhost:6379/1'),
+#         'OPTIONS': {
+#             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+#         }
+#     }
+# }
+
+# ========================================
+# SESSION SETTINGS (⚠️ FIXED: Removed duplicate)
+# ========================================
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Use database sessions
+SESSION_COOKIE_AGE = 86400 * 30  # 30 days
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SECURE = not DEBUG  # True in production
+
+# ========================================
+# FIREBASE CLOUD MESSAGING
 # ========================================
 FCM_SERVER_KEY = os.getenv('FCM_SERVER_KEY', '')
 
@@ -277,7 +308,6 @@ DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'SwiftRide <noreply@swiftri
 # ========================================
 # PAYMENT GATEWAYS
 # ========================================
-
 # Paystack
 PAYSTACK_SECRET_KEY = os.getenv('PAYSTACK_SECRET_KEY', '')
 PAYSTACK_PUBLIC_KEY = os.getenv('PAYSTACK_PUBLIC_KEY', '')
@@ -320,25 +350,13 @@ DRIVER_SETTINGS = {
 }
 
 # ========================================
-# CACHE
+# FILE UPLOAD SETTINGS
 # ========================================
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'django_redis.cache.RedisCache',
-#         'LOCATION': os.getenv('REDIS_URL', 'redis://localhost:6379/1'),
-#         'OPTIONS': {
-#             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-#         }
-#     }
-# }
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-    }
-}
+FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 
-SESSION_ENGINE = "django.contrib.sessions.backends.db"
-
+ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp']
+ALLOWED_DOCUMENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
 
 # ========================================
 # LOGGING
@@ -383,35 +401,23 @@ LOGGING = {
     },
 }
 
-# Create logs directory if it doesn't exist
+# Create logs directory
 os.makedirs(BASE_DIR / 'logs', exist_ok=True)
 
 # ========================================
-# SECURITY SETTINGS (Production)
-# ========================================
-
-
-# ========================================
-# FILE UPLOAD SETTINGS
-# ========================================
-FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
-DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
-
-ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp']
-ALLOWED_DOCUMENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
-
-# ========================================
-# SESSION SETTINGS
-# ========================================
-SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-SESSION_CACHE_ALIAS = 'default'
-SESSION_COOKIE_AGE = 86400 * 30  # 30 days
-
-# ========================================
-# ADMIN SITE CUSTOMIZATION
+# ADMIN CUSTOMIZATION
 # ========================================
 ADMIN_SITE_HEADER = 'SwiftRide Admin'
 ADMIN_SITE_TITLE = 'SwiftRide Admin Portal'
 ADMIN_INDEX_TITLE = 'Welcome to SwiftRide Administration'
 
-
+# ========================================
+# SECURITY SETTINGS (Production)
+# ========================================
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    X_FRAME_OPTIONS = 'DENY'

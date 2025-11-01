@@ -1,4 +1,7 @@
 """
+
+file location: accounts/management/commands/cleanup_expired_otps.py
+
 Management command to cleanup expired OTP verification records.
 
 Usage:

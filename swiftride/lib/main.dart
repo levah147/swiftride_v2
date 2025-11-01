@@ -185,4 +185,4 @@ class SwiftRideApp extends StatelessWidget {
       onUnknownRoute: AppRoutes.onUnknownRoute,
     );
   }
-}
+} 

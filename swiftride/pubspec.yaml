@@ -27,10 +27,11 @@ dependencies:
    # For smooth animations
   animations: ^2.0.8
   lottie: ^3.3.1
-  country_picker: ^2.0.27
+  country_picker: ^2.0.27 
   image_picker: ^1.1.2
   intl: ^0.20.2
   file_picker: ^10.3.3
+  logger: ^2.6.2
 
 
 dev_dependencies:
