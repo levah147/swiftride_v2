@@ -1,6 +1,6 @@
+
 """
 FILE LOCATION: notifications/apps.py
-
 App configuration for notifications app.
 """
 from django.apps import AppConfig
@@ -13,6 +13,5 @@ class NotificationsConfig(AppConfig):
     
     def ready(self):
         """Import signals when app is ready"""
-        # Import signals here if you create any
-        # import notifications.signals
-        pass
+        import notifications.signals
+

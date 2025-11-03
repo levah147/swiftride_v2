@@ -7,5 +7,5 @@ class DriversConfig(AppConfig):
     verbose_name = 'Driver Management'
     
     def ready(self):
-        # Import signals here if you create them later
-        pass
+        """Import signals when app is ready"""
+        import drivers.signals  # ⚠️ IMPORTANT: Load signal handlers

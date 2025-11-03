@@ -1,6 +1,6 @@
+
 """
 FILE LOCATION: chat/apps.py
-
 App configuration for chat app.
 """
 from django.apps import AppConfig
@@ -13,6 +13,6 @@ class ChatConfig(AppConfig):
     
     def ready(self):
         """Import signals when app is ready"""
-        # Import signals here if you create any
-        # import chat.signals
-        pass
+        import chat.signals  # Load chat signals
+
+

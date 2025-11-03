@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django_filters', 
     'drf_yasg',  # API documentation
     'sslserver',
+    'celery',
     
     # SwiftRide apps (in dependency order)
     'accounts',          # 1. Core - User model (foundation)
@@ -56,7 +57,7 @@ INSTALLED_APPS = [
     'safety',            # 13. Depends on: accounts, rides
     'admin_dashboard',   # 14. Depends on: all apps ⚠️ FIXED: was 'admin_dashboard_app'
 ]  
-
+ 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',

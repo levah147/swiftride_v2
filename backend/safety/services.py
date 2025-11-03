@@ -33,7 +33,7 @@ def notify_admin_team(sos):
     # Send alert to admin dashboard/team
     pass
 
-
+ 
 def send_trip_share_notification(trip_share):
     """Send trip share notifications"""
     for contact in trip_share.shared_with:
