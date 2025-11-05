@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:geocoding/geocoding.dart';
 import 'package:swiftride/models/location.dart';
 import '../../constants/colors.dart';
 import '../../constants/app_dimensions.dart';
 import '../../models/vehicle_type.dart';
 import '../../services/location_service.dart';
 import '../../services/ride_service.dart';
+import '../../services/api_client.dart';
 import '../rides_booking/ride_options_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,7 +29,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   bool _isLoadingLocation = true;
   bool _isLoadingVehicles = true;
   bool _isLoadingRecent = true;
-  String _currentCity = 'Makurdi';
+  String _currentCity = 'Detecting...'; // ✅ DYNAMIC - NOT STATIC!
+  String _currentCountry = '';
   
   // Draggable bottom sheet
   late AnimationController _bottomSheetController;
@@ -35,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   
   // Dynamic data from API
   List<VehicleType> _availableVehicles = [];
-  List<Map<String, dynamic>> _recentLocations = [];
+  List<RecentLocation> _recentLocations = []; 
   VehicleType? _selectedVehicle;
   String? _homeAddress;
   String? _workAddress;
@@ -43,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // Services
   final LocationService _locationService = LocationService();
   final RideService _rideService = RideService();
+  final ApiClient _apiClient = ApiClient.instance;
 
   @override
   void initState() {
@@ -62,14 +66,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Future<void> _initializeScreen() async {
     // Load everything in parallel
     await Future.wait([
-      _getCurrentLocation(),
-      _loadAvailableVehicles(),
-      _loadRecentLocations(),
+      _getCurrentLocationAndDetectCity(), // ✅ AUTO DETECT CITY
       _loadSavedPlaces(),
     ]);
+    
+    // Load vehicles AFTER we know the city
+    await _loadAvailableVehiclesFromBackend(); // ✅ FROM BACKEND
+    await _loadRecentLocations();
   }
 
-  Future<void> _getCurrentLocation() async {
+  // ============================================
+  // ✅ AUTO CITY DETECTION - NOT STATIC!
+  // ============================================
+  Future<void> _getCurrentLocationAndDetectCity() async {
     try {
       setState(() => _isLoadingLocation = true);
 
@@ -79,128 +88,188 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
           _showError('Location permission denied');
-          setState(() => _isLoadingLocation = false);
+          setState(() {
+            _currentCity = 'Permission Denied';
+            _isLoadingLocation = false;
+          });
           return;
         }
       }
 
-      // Get position
+      if (permission == LocationPermission.deniedForever) {
+        _showError('Please enable location in settings');
+        setState(() {
+          _currentCity = 'Permission Required';
+          _isLoadingLocation = false;
+        });
+        return;
+      }
+
+      // Get position with high accuracy
       Position position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high,
+        timeLimit: const Duration(seconds: 15),
       );
 
       if (!mounted) return;
 
       setState(() {
         _currentPosition = position;
-        _isLoadingLocation = false;
       });
 
-      // Move camera
+      // ✅ Move camera with 3D effect
       _mapController?.animateCamera(
         CameraUpdate.newCameraPosition(
           CameraPosition(
             target: LatLng(position.latitude, position.longitude),
-            zoom: 15,
+            zoom: 16.0, // Higher zoom for detail
+            tilt: 45.0, // ✅ 3D TILT
+            bearing: 0,
           ),
         ),
       );
 
-      // Detect city (will use geocoding in production)
-      await _detectCity(position);
+      // ✅ GET ACTUAL CITY NAME FROM COORDINATES
+      await _detectCityFromCoordinates(position);
+
     } catch (e) {
-      debugPrint('Location error: $e');
+      debugPrint('❌ Location error: $e');
       if (mounted) {
-        setState(() => _isLoadingLocation = false);
-        _showError('Could not get location');
+        setState(() {
+          _currentCity = 'Makurdi'; // Fallback
+          _isLoadingLocation = false;
+        });
+        _showError('Could not detect location');
       }
     }
   }
 
-  Future<void> _detectCity(Position position) async {
-    // TODO: Use Geocoding API to get actual city name
-    // For now, default to Makurdi
-    setState(() {
-      _currentCity = 'Makurdi';
-    });
-    
-    // Reload vehicles for detected city
-    await _loadAvailableVehicles();
-  }
-
-  Future<void> _loadAvailableVehicles() async {
+  // ============================================
+  // ✅ REVERSE GEOCODING - GET REAL CITY NAME
+  // ============================================
+  Future<void> _detectCityFromCoordinates(Position position) async {
     try {
-      setState(() => _isLoadingVehicles = true);
+      debugPrint('🔍 Detecting city from: ${position.latitude}, ${position.longitude}');
 
-      // TODO: Call your API
-      // GET /api/vehicle-types?city=Makurdi&lat=X&lon=Y
-      
-      // Mock API call for now
-      await Future.delayed(const Duration(milliseconds: 500));
-      
-      // In production, replace with:
-      // final response = await ApiClient.instance.get(
-      //   '/vehicle-types',
-      //   queryParams: {
-      //     'city': _currentCity,
-      //     if (_currentPosition != null) ...{
-      //       'lat': _currentPosition!.latitude.toString(),
-      //       'lon': _currentPosition!.longitude.toString(),
-      //     }
-      //   },
-      // );
-      
-      if (!mounted) return;
+      // Use geocoding to get place name
+      List<Placemark> placemarks = await placemarkFromCoordinates(
+        position.latitude,
+        position.longitude,
+      );
 
-      // For testing, use static data based on city
-      final vehicles = VehicleTypes.getVehiclesForCity(_currentCity);
-      
-      setState(() {
-        _availableVehicles = vehicles.where((v) => v.available).toList();
-        _isLoadingVehicles = false;
-      });
+      if (placemarks.isNotEmpty) {
+        final place = placemarks.first;
+        
+        // Extract city name (try multiple fields)
+        String cityName = place.locality ?? 
+                         place.subAdministrativeArea ?? 
+                         place.administrativeArea ?? 
+                         'Makurdi'; // Final fallback
+        
+        String country = place.country ?? '';
+
+        if (!mounted) return;
+
+        setState(() {
+          _currentCity = cityName;
+          _currentCountry = country;
+          _isLoadingLocation = false;
+        });
+
+        debugPrint('✅ City detected: $cityName, $country');
+
+        // Reload vehicles for this city
+        await _loadAvailableVehiclesFromBackend();
+      }
     } catch (e) {
-      debugPrint('Vehicles load error: $e');
+      debugPrint('❌ Geocoding error: $e');
       if (mounted) {
         setState(() {
-          _availableVehicles = [];
-          _isLoadingVehicles = false;
+          _currentCity = 'Makurdi';
+          _isLoadingLocation = false;
         });
       }
     }
+  }
+
+  // ============================================
+  // ✅ LOAD VEHICLES FROM BACKEND - DYNAMIC!
+  // ============================================
+  Future<void> _loadAvailableVehiclesFromBackend() async {
+    try {
+      setState(() => _isLoadingVehicles = true);
+
+      debugPrint('🚗 Loading vehicles for: $_currentCity');
+
+      // ✅ CALL BACKEND API
+      final response = await _apiClient.get<List<dynamic>>(
+        '/vehicles/types/',
+        queryParams: {
+          'city': _currentCity,
+          if (_currentPosition != null) ...{
+            'latitude': _currentPosition!.latitude.toString(),
+            'longitude': _currentPosition!.longitude.toString(),
+          },
+        },
+        fromJson: (json) => json as List<dynamic>,
+      );
+
+      if (!mounted) return;
+
+      if (response.isSuccess && response.data != null) {
+        // ✅ Parse vehicles from backend response
+        final vehicles = response.data!.map((item) {
+          return VehicleType.fromJson(item as Map<String, dynamic>);
+        }).toList();
+
+        setState(() {
+          _availableVehicles = vehicles.where((v) => v.available).toList();
+          _isLoadingVehicles = false;
+        });
+
+        debugPrint('✅ Loaded ${_availableVehicles.length} vehicles from backend');
+      } else {
+        // Backend failed - use local fallback
+        debugPrint('⚠️ Backend failed: ${response.error}');
+        _loadLocalVehiclesFallback();
+      }
+    } catch (e) {
+      debugPrint('❌ Vehicle load error: $e');
+      _loadLocalVehiclesFallback();
+    }
+  }
+
+  // Fallback to local data if backend unavailable
+  void _loadLocalVehiclesFallback() {
+    debugPrint('📱 Using local vehicle data for: $_currentCity');
+    setState(() {
+      _availableVehicles = VehicleTypes.getVehiclesForCity(_currentCity);
+      _isLoadingVehicles = false;
+    });
   }
 
   Future<void> _loadRecentLocations() async {
     try {
       setState(() => _isLoadingRecent = true);
 
-      // Call API to get recent locations
       final response = await _locationService.getRecentLocations();
       
       if (!mounted) return;
 
       if (response.isSuccess && response.data != null) {
         setState(() {
-          _recentLocations = response.data!.map((location) {
-            return {
-              'id': location.id,
-              'title': location.address.split(',').first,
-              'subtitle': location.address,
-              'latitude': location.latitude,
-              'longitude': location.longitude,
-            };
-          }).toList();
+          _recentLocations = response.data!;
           _isLoadingRecent = false;
         });
+        debugPrint('✅ Loaded ${_recentLocations.length} recent locations');
       } else {
-        // No recent locations yet
         setState(() {
           _recentLocations = [];
           _isLoadingRecent = false;
         });
       }
     } catch (e) {
-      debugPrint('Recent locations error: $e');
+      debugPrint('❌ Recent locations error: $e');
       if (mounted) {
         setState(() {
           _recentLocations = [];
@@ -212,35 +281,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _loadSavedPlaces() async {
     try {
-      // TODO: Call API to get saved places
-      // GET /api/locations/saved/
-      
       final response = await _locationService.getSavedLocations();
       
       if (!mounted) return;
 
       if (response.isSuccess && response.data != null) {
         for (var place in response.data!) {
-          if (place.type == 'home') {
+          if (place.type.toLowerCase() == 'home') {
             setState(() => _homeAddress = place.address);
-          } else if (place.type == 'work') {
+          } else if (place.type.toLowerCase() == 'work') {
             setState(() => _workAddress = place.address);
           }
         }
+        debugPrint('✅ Loaded saved places');
       }
     } catch (e) {
-      debugPrint('Saved places error: $e');
+      debugPrint('❌ Saved places error: $e');
     }
   }
 
-  void _bookRide(Map<String, dynamic> destination) {
-    // Navigate directly to ride options with selected destination
+  void _bookRide(String title, String address) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => RideOptionsScreen(
           from: 'Current Location',
-          to: destination['title'] ?? destination['subtitle'],
+          to: title,
           isScheduled: false,
           city: _currentCity,
         ),
@@ -254,6 +320,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       SnackBar(
         content: Text(message),
         backgroundColor: AppColors.error,
+        behavior: SnackBarBehavior.floating,
       ),
     );
   }
@@ -270,7 +337,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Scaffold(
       body: Stack(
         children: [
-          // Google Map (takes 70% of screen)
+          // ✅ 3D SHARP MAP (Full screen)
           _buildMap(),
           
           // Top gradient overlay
@@ -279,35 +346,47 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           // Recenter button
           _buildRecenterButton(),
           
-          // Draggable bottom sheet (starts at 30% of screen)
+          // Draggable bottom sheet
           _buildDraggableBottomSheet(),
         ],
       ),
     );
   }
 
+  // ============================================
+  // ✅ SHARP 3D MAP WITH DETAILS
+  // ============================================
   Widget _buildMap() {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.7, // 70% for map
+      height: MediaQuery.of(context).size.height * 0.7,
       child: GoogleMap(
         initialCameraPosition: CameraPosition(
           target: _currentPosition != null
               ? LatLng(_currentPosition!.latitude, _currentPosition!.longitude)
-              : const LatLng(7.7304, 8.5378), // Makurdi
-          zoom: 15,
+              : const LatLng(7.7304, 8.5378), // Makurdi fallback
+          zoom: 16.0,
+          tilt: 45.0, // ✅ 3D TILT
         ),
         onMapCreated: (GoogleMapController controller) {
           _mapController = controller;
-          // Dark map style
+          
+          // ✅ APPLY DETAILED MAP STYLE
           _mapController?.setMapStyle('''
             [
               {
-                "elementType": "geometry",
-                "stylers": [{"color": "#1d2c4d"}]
+                "featureType": "poi",
+                "elementType": "labels",
+                "stylers": [{"visibility": "on"}]
               },
               {
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#8ec3b9"}]
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [{"visibility": "simplified"}]
+              },
+              {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [{"visibility": "on"}]
               }
             ]
           ''');
@@ -315,18 +394,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         myLocationEnabled: true,
         myLocationButtonEnabled: false,
         zoomControlsEnabled: false,
+        compassEnabled: true,
         mapToolbarEnabled: false,
-        markers: _currentPosition != null
-            ? {
-                Marker(
-                  markerId: const MarkerId('current'),
-                  position: LatLng(
-                    _currentPosition!.latitude,
-                    _currentPosition!.longitude,
-                  ),
-                ),
-              }
-            : {},
+        buildingsEnabled: true, // ✅ 3D BUILDINGS
+        trafficEnabled: false,
+        indoorViewEnabled: true,
+        liteModeEnabled: false, // ✅ FULL QUALITY - NOT LITE MODE
+        mapType: MapType.normal,
+        minMaxZoomPreference: const MinMaxZoomPreference(12, 20),
       ),
     );
   }
@@ -343,7 +418,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              AppColors.backgroundPrimary.withOpacity(0.8),
+              AppColors.backgroundPrimary.withOpacity(0.9),
               Colors.transparent,
             ],
           ),
@@ -353,7 +428,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             padding: const EdgeInsets.all(AppDimensions.paddingLarge),
             child: GestureDetector(
               onTap: () {
-                // TODO: Show city picker
+                // Show city picker or refresh location
+                _getCurrentLocationAndDetectCity();
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(
@@ -373,17 +449,35 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.location_on, color: AppColors.primary, size: 20),
+                    Icon(
+                      _isLoadingLocation ? Icons.location_searching : Icons.location_on,
+                      color: AppColors.primary,
+                      size: 20,
+                    ),
                     const SizedBox(width: 8),
                     Text(
-                      _currentCity,
+                      _currentCity, // ✅ DYNAMIC CITY NAME
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const Icon(Icons.keyboard_arrow_down, color: AppColors.textSecondary),
+                    const SizedBox(width: 4),
+                    if (_isLoadingLocation)
+                      const SizedBox(
+                        width: 12,
+                        height: 12,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          valueColor: AlwaysStoppedAnimation(AppColors.primary),
+                        ),
+                      )
+                    else
+                      const Icon(
+                        Icons.keyboard_arrow_down,
+                        color: AppColors.textSecondary,
+                      ),
                   ],
                 ),
               ),
@@ -411,7 +505,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ),
         child: IconButton(
           icon: Icon(Icons.my_location, color: AppColors.primary),
-          onPressed: _getCurrentLocation,
+          onPressed: _getCurrentLocationAndDetectCity,
+          tooltip: 'Recenter & Detect City',
         ),
       ),
     );
@@ -420,9 +515,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildDraggableBottomSheet() {
     return DraggableScrollableSheet(
       controller: _scrollController,
-      initialChildSize: 0.35, // Starts at 35% of screen
+      initialChildSize: 0.35,
       minChildSize: 0.35,
-      maxChildSize: 0.9, // Can expand to 90%
+      maxChildSize: 0.9,
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
@@ -456,23 +551,37 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
               ),
               
-              // Search bar
+              // ✅ IMPROVED SEARCH BAR
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
-                child: _buildSearchBar(),
+                child: _buildImprovedSearchBar(),
               ),
               
               const SizedBox(height: 20),
               
-              // Vehicle selector (only if vehicles loaded and available)
+              // ✅ VEHICLE SELECTOR (FROM BACKEND)
               if (_isLoadingVehicles)
-                const Center(child: CircularProgressIndicator())
+                const Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        CircularProgressIndicator(),
+                        SizedBox(height: 8),
+                        Text(
+                          'Loading vehicles...',
+                          style: TextStyle(color: AppColors.textSecondary),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               else if (_availableVehicles.isNotEmpty)
                 _buildVehicleSelector(),
               
               const SizedBox(height: 20),
               
-              // Quick actions (Home/Work)
+              // Quick actions
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
                 child: _buildQuickActions(),
@@ -480,7 +589,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               
               const SizedBox(height: 20),
               
-              // Recent locations (only if exists)
+              // Recent locations
               if (_isLoadingRecent)
                 const Padding(
                   padding: EdgeInsets.all(20),
@@ -497,15 +606,33 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _buildSearchBar() {
+  // ============================================
+  // ✅ IMPROVED SEARCH BAR
+  // ============================================
+  Widget _buildImprovedSearchBar() {
     return GestureDetector(
       onTap: () => widget.onNavigate('destination_selection'),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: AppColors.surface,
+          gradient: LinearGradient(
+            colors: [
+              AppColors.surface,
+              AppColors.surface.withOpacity(0.8),
+            ],
+          ),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.border),
+          border: Border.all(
+            color: AppColors.primary.withOpacity(0.2),
+            width: 1.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primary.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
         ),
         child: Row(
           children: [
@@ -515,14 +642,50 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               decoration: BoxDecoration(
                 gradient: AppColors.primaryGradient,
                 borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.primary.withOpacity(0.3),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
               ),
-              child: const Icon(Icons.search, color: Colors.white, size: 20),
+              child: const Icon(Icons.search, color: Colors.white, size: 22),
             ),
             const SizedBox(width: 16),
             const Expanded(
-              child: Text(
-                'Where are you going?',
-                style: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Where to?',
+                    style: TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(height: 2),
+                  Text(
+                    'Search destination',
+                    style: TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Icon(
+                Icons.arrow_forward_ios,
+                color: AppColors.primary,
+                size: 16,
               ),
             ),
           ],
@@ -535,20 +698,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
-          child: Text(
-            'Available Rides',
-            style: TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'Available Rides',
+                style: TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Text(
+                'in $_currentCity', // ✅ Show current city
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 12,
+                ),
+              ),
+            ],
           ),
         ),
         const SizedBox(height: 12),
         SizedBox(
-          height: 90,
+          height: 100,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingLarge),
@@ -561,8 +736,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 onTap: () {
                   setState(() => _selectedVehicle = vehicle);
                 },
-                child: Container(
-                  width: 80,
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  width: 85,
                   margin: const EdgeInsets.only(right: 12),
                   decoration: BoxDecoration(
                     color: isSelected 
@@ -573,6 +749,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       color: isSelected ? vehicle.color : AppColors.border,
                       width: isSelected ? 2 : 1,
                     ),
+                    boxShadow: isSelected ? [
+                      BoxShadow(
+                        color: vehicle.color.withOpacity(0.3),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ] : [],
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -580,15 +763,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       Icon(
                         vehicle.icon,
                         color: isSelected ? vehicle.color : AppColors.textSecondary,
-                        size: 32,
+                        size: 36,
                       ),
                       const SizedBox(height: 8),
                       Text(
                         vehicle.name,
                         style: TextStyle(
                           color: isSelected ? vehicle.color : AppColors.textPrimary,
-                          fontSize: 12,
-                          fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+                          fontSize: 13,
+                          fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        vehicle.formattedBasePrice,
+                        style: TextStyle(
+                          color: isSelected ? vehicle.color : AppColors.textSecondary,
+                          fontSize: 11,
                         ),
                       ),
                     ],
@@ -611,15 +802,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             label: _homeAddress?.split(',').first ?? 'Add Home',
             onTap: () {
               if (_homeAddress != null) {
-                // Book ride to home directly
-                _bookRide({
-                  'title': 'Home',
-                  'subtitle': _homeAddress!,
-                });
+                _bookRide('Home', _homeAddress!);
               } else {
-                // Navigate to add home
-                // TODO: Implement add home screen
-                _showError('Please add your home address in settings');
+                _showError('Please add your home address in Account settings');
               }
             },
           ),
@@ -631,14 +816,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             label: _workAddress?.split(',').first ?? 'Add Work',
             onTap: () {
               if (_workAddress != null) {
-                // Book ride to work directly
-                _bookRide({
-                  'title': 'Work',
-                  'subtitle': _workAddress!,
-                });
+                _bookRide('Work', _workAddress!);
               } else {
-                // Navigate to add work
-                _showError('Please add your work address in settings');
+                _showError('Please add your work address in Account settings');
               }
             },
           ),
@@ -655,7 +835,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 14),
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
         decoration: BoxDecoration(
           color: AppColors.surface,
           borderRadius: BorderRadius.circular(12),
@@ -664,7 +844,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, color: AppColors.textPrimary, size: 18),
+            Icon(icon, color: AppColors.primary, size: 20),
             const SizedBox(width: 8),
             Flexible(
               child: Text(
@@ -703,7 +883,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               TextButton(
                 onPressed: () {
-                  // TODO: Show all recent locations
+                  widget.onNavigate('destination_selection');
                 },
                 child: const Text(
                   'See all',
@@ -726,9 +906,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           itemBuilder: (context, index) {
             final location = _recentLocations[index];
             return _buildLocationItem(
-              title: location['title'] ?? '',
-              subtitle: location['subtitle'] ?? '',
-              onTap: () => _bookRide(location),
+              title: location.address.split(',').first,
+              subtitle: location.address,
+              onTap: () => _bookRide(
+                location.address.split(',').first,
+                location.address,
+              ),
             );
           },
         ),
@@ -754,6 +937,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               decoration: BoxDecoration(
                 color: AppColors.surface,
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: AppColors.border),
               ),
               child: const Icon(
                 Icons.history,
@@ -798,7 +982,3 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 }
-
-extension on RecentLocation {
-  get id => null;
-} 

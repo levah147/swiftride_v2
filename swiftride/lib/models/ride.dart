@@ -1,23 +1,78 @@
+// ==================== models/ride.dart ====================
+// COMPLETE RIDE MODEL - Production Ready
+// Handles all backend API responses
+
+import 'package:flutter/material.dart';
+
 enum RideStatus {
   pending,
   driverAssigned,
   driverArriving,
   inProgress,
   completed,
-  cancelled,
-}
+  cancelled;
 
-enum RideType {
-  swiftGo,
-  swiftComfort,
-  swiftXL,
+  String get displayName {
+    switch (this) {
+      case RideStatus.pending:
+        return 'Finding Driver';
+      case RideStatus.driverAssigned:
+        return 'Driver Assigned';
+      case RideStatus.driverArriving:
+        return 'Driver Arriving';
+      case RideStatus.inProgress:
+        return 'In Progress';
+      case RideStatus.completed:
+        return 'Completed';
+      case RideStatus.cancelled:
+        return 'Cancelled';
+    }
+  }
+
+  Color get color {
+    switch (this) {
+      case RideStatus.pending:
+        return const Color(0xFFF59E0B);
+      case RideStatus.driverAssigned:
+      case RideStatus.driverArriving:
+        return const Color(0xFF0066FF);
+      case RideStatus.inProgress:
+        return const Color(0xFF7C3AED);
+      case RideStatus.completed:
+        return const Color(0xFF10B981);
+      case RideStatus.cancelled:
+        return const Color(0xFFEF4444);
+    }
+  }
+
+  static RideStatus fromString(String status) {
+    switch (status.toLowerCase()) {
+      case 'pending':
+        return RideStatus.pending;
+      case 'driver_assigned':
+      case 'accepted':
+        return RideStatus.driverAssigned;
+      case 'driver_arriving':
+      case 'arriving':
+        return RideStatus.driverArriving;
+      case 'in_progress':
+      case 'started':
+        return RideStatus.inProgress;
+      case 'completed':
+        return RideStatus.completed;
+      case 'cancelled':
+        return RideStatus.cancelled;
+      default:
+        return RideStatus.pending;
+    }
+  }
 }
 
 class Ride {
   final String id;
   final String userId;
   final String? driverId;
-  final RideType rideType;
+  final String rideType;
   final RideStatus status;
   final String pickupAddress;
   final double pickupLatitude;
@@ -53,60 +108,82 @@ class Ride {
   });
 
   factory Ride.fromJson(Map<String, dynamic> json) {
-    return Ride(
-      id: json['id'].toString(),
-      userId: json['user_id'].toString(),
-      driverId: json['driver_id']?.toString(),
-      rideType: _parseRideType(json['ride_type']),
-      status: _parseRideStatus(json['status']),
-      pickupAddress: json['pickup_address'],
-      pickupLatitude: json['pickup_latitude'].toDouble(),
-      pickupLongitude: json['pickup_longitude'].toDouble(),
-      destinationAddress: json['destination_address'],
-      destinationLatitude: json['destination_latitude'].toDouble(),
-      destinationLongitude: json['destination_longitude'].toDouble(),
-      fare: json['fare']?.toDouble(),
-      distance: json['distance']?.toDouble(),
-      estimatedDuration: json['estimated_duration'],
-      createdAt: DateTime.parse(json['created_at']),
-      completedAt: json['completed_at'] != null ? DateTime.parse(json['completed_at']) : null,
-      driver: json['driver'] != null ? Driver.fromJson(json['driver']) : null,
-    );
-  }
-
-  static RideType _parseRideType(String type) {
-    switch (type.toLowerCase()) {
-      case 'swift_go':
-        return RideType.swiftGo;
-      case 'swift_comfort':
-        return RideType.swiftComfort;
-      case 'swift_xl':
-        return RideType.swiftXL;
-      default:
-        return RideType.swiftGo;
+    try {
+      return Ride(
+        id: json['id'].toString(),
+        userId: json['user_id']?.toString() ?? '',
+        driverId: json['driver_id']?.toString(),
+        rideType: json['ride_type'] ?? 'swift_go',
+        status: RideStatus.fromString(json['status'] ?? 'pending'),
+        pickupAddress: json['pickup_address'] ?? json['pickup_location'] ?? '',
+        pickupLatitude: _parseDouble(json['pickup_latitude']) ?? 0.0,
+        pickupLongitude: _parseDouble(json['pickup_longitude']) ?? 0.0,
+        destinationAddress: json['destination_address'] ?? json['dropoff_location'] ?? '',
+        destinationLatitude: _parseDouble(json['destination_latitude']) ?? 0.0,
+        destinationLongitude: _parseDouble(json['destination_longitude']) ?? 0.0,
+        fare: _parseDouble(json['fare'] ?? json['fare_amount']),
+        distance: _parseDouble(json['distance']),
+        estimatedDuration: json['estimated_duration'] as int?,
+        createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+        completedAt: json['completed_at'] != null ? DateTime.parse(json['completed_at']) : null,
+        driver: json['driver'] != null ? Driver.fromJson(json['driver']) : null,
+      );
+    } catch (e) {
+      debugPrint('❌ Error parsing Ride: $e');
+      debugPrint('JSON: $json');
+      rethrow;
     }
   }
 
-  static RideStatus _parseRideStatus(String status) {
-    switch (status.toLowerCase()) {
-      case 'pending':
-        return RideStatus.pending;
-      case 'driver_assigned':
-        return RideStatus.driverAssigned;
-      case 'driver_arriving':
-        return RideStatus.driverArriving;
-      case 'in_progress':
-        return RideStatus.inProgress;
-      case 'completed':
-        return RideStatus.completed;
-      case 'cancelled':
-        return RideStatus.cancelled;
-      default:
-        return RideStatus.pending;
+  static double? _parseDouble(dynamic value) {
+    if (value == null) return null;
+    if (value is double) return value;
+    if (value is int) return value.toDouble();
+    if (value is String) {
+      try {
+        return double.parse(value);
+      } catch (e) {
+        return null;
+      }
     }
+    return null;
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'user_id': userId,
+      'driver_id': driverId,
+      'ride_type': rideType,
+      'status': status.name,
+      'pickup_address': pickupAddress,
+      'pickup_latitude': pickupLatitude,
+      'pickup_longitude': pickupLongitude,
+      'destination_address': destinationAddress,
+      'destination_latitude': destinationLatitude,
+      'destination_longitude': destinationLongitude,
+      'fare': fare,
+      'distance': distance,
+      'estimated_duration': estimatedDuration,
+      'created_at': createdAt.toIso8601String(),
+      'completed_at': completedAt?.toIso8601String(),
+    };
+  }
+
+  // Helper getters
+  bool get hasDriver => driverId != null;
+  bool get isActive => status == RideStatus.pending ||
+      status == RideStatus.driverAssigned ||
+      status == RideStatus.driverArriving ||
+      status == RideStatus.inProgress;
+  bool get isCompleted => status == RideStatus.completed;
+  bool get isCancelled => status == RideStatus.cancelled;
+
+  String get formattedFare => fare != null ? '₦${fare!.toStringAsFixed(0)}' : '₦0';
+  String get formattedDistance => distance != null ? '${distance!.toStringAsFixed(1)} km' : '0 km';
+  String get formattedDuration => estimatedDuration != null ? '${estimatedDuration! ~/ 60} min' : '0 min';
 }
- 
+
 class Driver {
   final String id;
   final String name;
@@ -131,13 +208,26 @@ class Driver {
   factory Driver.fromJson(Map<String, dynamic> json) {
     return Driver(
       id: json['id'].toString(),
-      name: json['name'],
-      phoneNumber: json['phone_number'],
-      rating: (json['rating'] ?? 0.0).toDouble(),
-      vehicleModel: json['vehicle_model'],
-      vehicleColor: json['vehicle_color'],
-      licensePlate: json['license_plate'],
-      profileImage: json['profile_image'],
+      name: json['name'] ?? json['full_name'] ?? 'Driver',
+      phoneNumber: json['phone_number'] ?? '',
+      rating: (json['rating'] ?? 5.0).toDouble(),
+      vehicleModel: json['vehicle_model'] ?? '',
+      vehicleColor: json['vehicle_color'] ?? '',
+      licensePlate: json['license_plate'] ?? json['vehicle_plate'] ?? '',
+      profileImage: json['profile_image'] ?? json['profile_picture'],
     );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'phone_number': phoneNumber,
+      'rating': rating,
+      'vehicle_model': vehicleModel,
+      'vehicle_color': vehicleColor,
+      'license_plate': licensePlate,
+      'profile_image': profileImage,
+    };
   }
 }

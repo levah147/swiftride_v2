@@ -1224,3 +1224,657 @@ INFO 2025-11-03 22:36:33,496 autoreload D:\code\copy - fix\backend\admin_dashboa
 INFO 2025-11-03 22:36:35,624 autoreload Watching for file changes with StatReloader
 INFO 2025-11-03 22:36:48,958 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
 INFO 2025-11-03 22:36:51,618 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:30:04,479 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:31:55,718 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:32:07,533 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:32:07,634 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,673 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55019
+INFO 2025-11-04 11:32:13,805 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:13,818 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,821 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,826 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,837 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,841 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,850 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,855 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,859 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,887 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:21,348 basehttp "GET /admin/accounts/ HTTP/1.1" 200 45457
+INFO 2025-11-04 11:32:23,071 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:23,118 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:28,352 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:28,564 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:32:28,622 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:32:28,623 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:32:28,641 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:28,642 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:32:28,692 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:32:28,723 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:32:28,819 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:32:28,851 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:32:28,853 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:32:28,864 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:32:28,889 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:32:28,893 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:32:28,909 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:28,938 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:32:29,038 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:32:29,053 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:32:29,105 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:32:29,135 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:32:29,154 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:32:29,173 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:32:29,187 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:32:29,254 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:32:29,452 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:30,498 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:30,534 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:32:30,560 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:32:30,567 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:32:30,572 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:32:30,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:30,584 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:32:30,597 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:32:30,609 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:32:30,615 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:32:30,617 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:32:30,621 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:32:30,623 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:32:30,624 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:32:30,635 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:30,638 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:32:30,756 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:32:30,767 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:32:30,771 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:32:30,774 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:32:30,779 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:32:30,789 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:32:30,812 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:32:30,852 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:32:31,067 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:39:23,169 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:40:33,027 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:40:33,164 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:07,399 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:42:07,574 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:42:07,603 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:42:07,606 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:42:07,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:07,691 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:42:07,744 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:42:07,810 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:42:07,861 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:42:07,864 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:42:07,865 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:42:07,866 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:42:07,908 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:42:07,928 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:42:07,932 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:42:07,942 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:42:08,041 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:42:08,056 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:42:08,094 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:42:08,178 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:42:08,229 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:42:08,280 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:42:08,372 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:42:08,374 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:42:08,566 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:42:11,977 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92009
+INFO 2025-11-04 11:42:12,036 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:12,042 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,062 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,072 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,105 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,124 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:16,503 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:42:45,583 basehttp "GET /admin/ HTTP/1.1" 200 120164
+ERROR 2025-11-04 11:52:41,396 log Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+WARNING 2025-11-04 11:52:41,425 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 23248
+ERROR 2025-11-04 11:52:47,112 log Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+WARNING 2025-11-04 11:52:47,114 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 23248
+INFO 2025-11-04 11:53:18,388 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 11:53:27,370 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:53:40,834 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-04 11:53:57,533 connection No hostname was supplied. Reverting to default 'localhost'
+ERROR 2025-11-04 11:54:02,627 log Internal Server Error: /api/auth/verify-otp/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\accounts\views.py", line 155, in verify_otp
+    user.save(update_fields=['is_phone_verified'])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\accounts\models.py", line 115, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "D:\code\copy - fix\backend\accounts\signals.py", line 51, in user_phone_verified_handler
+    send_notification_all_channels.delay(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=instance.id,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        send_sms=False
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+ERROR 2025-11-04 11:54:02,646 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 500 29904
+INFO 2025-11-04 11:54:59,991 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55017
+INFO 2025-11-04 11:55:00,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-11-04 11:55:22,521 log Bad Request: /api/auth/verify-otp/
+WARNING 2025-11-04 11:55:22,522 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 34
+WARNING 2025-11-04 12:04:58,890 log Unauthorized: /api/auth/profile/
+WARNING 2025-11-04 12:04:58,893 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-11-04 12:05:51,229 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 12:05:56,087 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:06:42,332 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-04 12:07:00,726 connection No hostname was supplied. Reverting to default 'localhost'
+ERROR 2025-11-04 12:07:05,060 log Internal Server Error: /api/auth/verify-otp/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\accounts\views.py", line 155, in verify_otp
+    user.save(update_fields=['is_phone_verified'])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\accounts\models.py", line 115, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "D:\code\copy - fix\backend\accounts\signals.py", line 51, in user_phone_verified_handler
+    send_notification_all_channels.delay(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=instance.id,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        send_sms=False
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+ERROR 2025-11-04 12:07:05,078 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 500 29611
+INFO 2025-11-04 12:08:01,195 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:03,169 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:08,536 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:10,381 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:15,679 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:17,500 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:25,884 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:27,963 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:32,574 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:48,840 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 993
+INFO 2025-11-04 12:08:49,495 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:08:51,529 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:51,533 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:51,537 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:08:51,543 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:08:51,543 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:53,036 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:09:12,569 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 12:09:14,414 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:10:58,886 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55900
+INFO 2025-11-04 12:13:22,763 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:13:24,458 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:13:25,683 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:25,698 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:25,703 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:13:25,717 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:13:25,758 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:28,040 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:33:36,265 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:33:38,216 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:33:39,435 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,437 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,441 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,443 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:33:39,446 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:33:40,350 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:46:27,971 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:46:29,574 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:46:30,841 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:30,844 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:30,849 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:46:30,849 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:46:30,855 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:31,803 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-05 16:00:35,763 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 16:05:33,626 log Invalid HTTP_HOST header: '192.168.248.65:8000'. You may need to add '192.168.248.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.248.65:8000'. You may need to add '192.168.248.65' to ALLOWED_HOSTS.
+WARNING 2025-11-05 16:05:33,668 basehttp "GET /api/auth/profile/ HTTP/1.1" 400 23276
+INFO 2025-11-05 16:06:25,181 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-05 16:06:35,371 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 16:06:40,996 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-05 16:06:42,938 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 16:07:00,957 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:10,595 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 993
+INFO 2025-11-05 16:07:10,880 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:07:11,481 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,484 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,487 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,488 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:07:11,492 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:07:13,822 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-05 16:11:16,492 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-05 16:11:17,494 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:17,629 basehttp code 400, message Bad request version ('ÅRá\x11Ä3X')
+ERROR 2025-11-05 16:11:17,915 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,755 basehttp code 400, message Bad request version ('ñÓ°\x04Ê¤')
+ERROR 2025-11-05 16:11:25,756 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,757 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03AZq\x91\x8dÒÞ¯Î³ód[®CÉ3\x8c&+\x1aÿ3')
+ERROR 2025-11-05 16:11:25,760 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,784 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00')
+INFO 2025-11-05 16:11:25,788 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-05 16:11:25,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-05 16:11:25,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:32,556 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063jj\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-05 16:11:32,556 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:32,560 basehttp code 400, message Bad request version ('_É\x9b\x9b\\M\x1b\x16\x8b\x95åd\x07')
+ERROR 2025-11-05 16:11:32,560 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,787 basehttp code 400, message Bad request version ('ój¡ë\x0e\x96\x07P:\x84A')
+ERROR 2025-11-05 16:11:43,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,790 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00')
+ERROR 2025-11-05 16:11:43,792 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,797 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-11-05 16:11:43,803 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,813 basehttp code 400, message Bad request version ('\x81/#K¯s%')
+ERROR 2025-11-05 16:11:43,926 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:12:12,392 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:15,067 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:14:16,917 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:18,220 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:14:19,509 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 16:14:20,877 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:20,878 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:14:21,097 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:21,098 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:14:21,367 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+WARNING 2025-11-05 16:14:26,688 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:26,688 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:14:27,519 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:27,520 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:15:19,152 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-05 16:15:30,167 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:30,168 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:33,961 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:33,962 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:52,517 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:52,517 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743348&longitude=7.4599225 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:56,019 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:56,020 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743345&longitude=7.4599352 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:23,568 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:23,569 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738091&longitude=7.4596808 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:24,402 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:24,403 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738096&longitude=7.4596782 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:25,285 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:25,286 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738096&longitude=7.4596782 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:26,216 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:26,217 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:27,076 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:27,077 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:27,853 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:27,854 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:28,665 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:28,668 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:29,319 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:29,322 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:32,195 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:32,196 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738109&longitude=7.4596734 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:34,419 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:34,420 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738109&longitude=7.4596734 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:38,174 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:38,176 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738113&longitude=7.4596726 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:29:09,938 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:29:11,140 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:29:12,222 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:29:12,224 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:29:12,277 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:29:12,285 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:29:14,074 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 16:29:15,595 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:29:15,596 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:29:15,693 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:29:15,706 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:29:15,835 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+WARNING 2025-11-05 16:34:42,055 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:34:42,056 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738368&longitude=7.4596226 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:35:57,972 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:35:57,973 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9736574&longitude=7.4594636 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:37:01,897 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:17,532 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:14:19,115 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:21,351 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:14:21,362 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:21,362 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:14:21,367 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:14:22,228 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:14:24,249 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:14:24,250 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:14:24,397 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:14:24,397 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:14:24,527 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:01,981 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:15:03,819 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:15:05,361 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:05,369 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:05,423 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:15:05,464 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:15:06,355 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:15:07,963 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:15:07,963 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:15:08,085 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:15:08,086 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:15:08,210 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:23,836 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:18:25,785 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:18:26,972 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:26,980 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:18:26,988 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:18:26,988 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:28,059 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:18:30,152 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:18:30,152 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9735796&longitude=7.4597232 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:18:30,482 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:18:30,483 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9735796&longitude=7.4597232 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:18:30,662 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52

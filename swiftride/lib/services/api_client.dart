@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart';
 
 class ApiClient {
-  static const String baseUrl = 'http://192.168.235.65:8000/api';
+  static const String baseUrl = 'http://192.168.248.65:8000/api';
   static ApiClient? _instance;
   
   ApiClient._internal();
